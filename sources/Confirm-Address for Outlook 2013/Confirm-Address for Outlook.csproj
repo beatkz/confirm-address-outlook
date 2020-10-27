@@ -26,14 +26,15 @@
     <NoStandardLibraries>false</NoStandardLibraries>
     <RootNamespace>Confirm_Address_for_Outlook_2013</RootNamespace>
     <AssemblyName>Confirm-AddressForOl</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <DefineConstants>VSTO40</DefineConstants>
     <IsWebBootstrapper>False</IsWebBootstrapper>
+    <TargetFrameworkProfile />
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <PublishUrl>D:\Users\kmomose\Desktop\Confirm-Address for Outlook 2013\</PublishUrl>
     <InstallUrl />
     <TargetCulture>ja</TargetCulture>
-    <ApplicationVersion>1.4.1.1</ApplicationVersion>
+    <ApplicationVersion>1.4.2.0</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>false</UpdateEnabled>
     <UpdateInterval>0</UpdateInterval>
@@ -49,6 +50,11 @@
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5.2 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 および x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -123,7 +129,7 @@
   -->
   <ItemGroup>
     <Reference Include="Accessibility" />
-    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -137,7 +143,6 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Office.Tools.v4.0.Framework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Office.Tools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Office.Tools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Office.Tools.Outlook, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -174,6 +179,12 @@
     can be found.
   -->
   <ItemGroup>
+    <Compile Include="ConfirmAddressDomainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmAddressDomainForm.Designer.cs">
+      <DependentUpon>ConfirmAddressDomainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CountDown.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,11 +208,50 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <EmbeddedResource Include="ConfirmAddressConfig.de.resx">
+      <DependentUpon>ConfirmAddressConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmAddressConfig.ja.resx">
+      <DependentUpon>ConfirmAddressConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmAddressConfig.pt-BR.resx">
+      <DependentUpon>ConfirmAddressConfig.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConfirmAddressConfig.resx">
       <DependentUpon>ConfirmAddressConfig.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmAddressDialog.de.resx">
+      <DependentUpon>ConfirmAddressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmAddressDialog.ja.resx">
+      <DependentUpon>ConfirmAddressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmAddressDialog.pt-BR.resx">
+      <DependentUpon>ConfirmAddressDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConfirmAddressDialog.resx">
       <DependentUpon>ConfirmAddressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmAddressDomainForm.de.resx">
+      <DependentUpon>ConfirmAddressDomainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmAddressDomainForm.ja.resx">
+      <DependentUpon>ConfirmAddressDomainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmAddressDomainForm.pt-BR.resx">
+      <DependentUpon>ConfirmAddressDomainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmAddressDomainForm.resx">
+      <DependentUpon>ConfirmAddressDomainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountDown.de.resx">
+      <DependentUpon>CountDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountDown.ja.resx">
+      <DependentUpon>CountDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountDown.pt-BR.resx">
+      <DependentUpon>CountDown.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CountDown.resx">
       <DependentUpon>CountDown.cs</DependentUpon>
@@ -214,6 +264,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
     <None Include="Confirm-Address for Outlook_1_TemporaryKey.pfx" />
@@ -272,7 +323,7 @@
       <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
         <ProjectProperties HostName="Outlook" HostPackage="{29A7B9D7-A7F1-4328-8EF0-6B2D1A56B2C1}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="Outlook" Language="cs" TemplatesPath="" DebugInfoExeName="#Software\Microsoft\Office\16.0\Outlook\InstallRoot\Path#outlook.exe" AddItemTemplatesGuid="{A58A78EB-1C92-4DDD-80CF-E8BD872ABFC4}" />
         <Host Name="Outlook" GeneratedCodeNamespace="Confirm_Address_for_Outlook_2013" PublishedHash="69C324AB27932AA2FBF2B7EA72250886FF164DE6" IconIndex="0">
-          <HostItem Name="ThisAddIn" Code="ThisAddIn.cs" CanonicalName="AddIn" PublishedHash="F2F28B9FC4B9D07485F6163F43CC3387E5402E35" CanActivate="false" IconIndex="1" Blueprint="ThisAddIn.Designer.xml" GeneratedCode="ThisAddIn.Designer.cs" />
+          <HostItem Name="ThisAddIn" Code="ThisAddIn.cs" CanonicalName="AddIn" PublishedHash="228359DCDA38926B94BF575DB31A2F323EC8CB96" CanActivate="false" IconIndex="1" Blueprint="ThisAddIn.Designer.xml" GeneratedCode="ThisAddIn.Designer.cs" />
         </Host>
       </FlavorProperties>
     </VisualStudio>

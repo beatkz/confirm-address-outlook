@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Linq;
-using System.Collections;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Microsoft.VisualBasic;
 using System.Deployment.Application;
 
 namespace Confirm_Address_for_Outlook_2013
@@ -214,20 +212,28 @@ namespace Confirm_Address_for_Outlook_2013
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            ListView lv = MyDomains;
-            string usdomainName = Interaction.InputBox(
+            /*string usdomainName = Interaction.InputBox(
                 "ドメイン名を入力してください\n(例：confirmaddress.jp)",
-                "ドメイン名の入力", "");
-            MyDomainsPostProcess(usdomainName, -1);
+                "ドメイン名の入力", "");*/
+            ConfirmAddressDomainForm df = new ConfirmAddressDomainForm();
+            if(df.ShowDialog() == DialogResult.OK)
+            {
+                string usdomainName = df.getInputDomain();
+                MyDomainsPostProcess(usdomainName, -1);
+            }
+            df.Dispose();
         }
 
         private void BtnEdit_Click(object sender, EventArgs e)
         {
             ListView lv = MyDomains;
-            string usdomainName = Interaction.InputBox(
-                "ドメイン名を入力してください\n(例：confirmaddress.jp)",
-                "ドメイン名の入力", lv.FocusedItem.Text);
-            MyDomainsPostProcess(usdomainName, lv.FocusedItem.Index);
+            ConfirmAddressDomainForm df = new ConfirmAddressDomainForm();
+            df.domain = lv.FocusedItem.Text;
+            if(df.ShowDialog() == DialogResult.OK)
+            {
+                string usdomainName = df.getInputDomain();
+                MyDomainsPostProcess(usdomainName, lv.FocusedItem.Index);
+            }
         }
 
         private void BtnRemove_Click(object sender, EventArgs e)
