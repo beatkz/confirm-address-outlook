@@ -117,26 +117,59 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BtnAdd.Text" xml:space="preserve">
+    <value>&amp;Hinzufügen</value>
+  </data>
+  <data name="BtnEdit.Text" xml:space="preserve">
+    <value>&amp;Bearbeiten</value>
+  </data>
+  <data name="BtnRemove.Text" xml:space="preserve">
+    <value>&amp;Entfernen</value>
+  </data>
+  <data name="colhMyDomain.Text" xml:space="preserve">
+    <value>Ihre Gruppendomain</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="InsiderDomainBatchCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 19</value>
+  </data>
+  <data name="InsiderDomainBatchCheck.Text" xml:space="preserve">
+    <value>Aktiviere Schaltfläche zum Abhaken aller Adressen meiner Domains</value>
+  </data>
+  <data name="OutsiderDomainBatchCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 19</value>
+  </data>
+  <data name="OutsiderDomainBatchCheck.Text" xml:space="preserve">
+    <value>Aktiviere Schaltfläche zum Abhaken aller Adressen anderer Domains</value>
+  </data>
+  <data name="CountDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 19</value>
+  </data>
+  <data name="CountDown.Text" xml:space="preserve">
+    <value>Countdown vor Versenden der E-Mail:</value>
+  </data>
+  <data name="NoDisplayInsiderDomainOnly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>426, 19</value>
+  </data>
+  <data name="NoDisplayInsiderDomainOnly.Text" xml:space="preserve">
+    <value>Dialogfenster unterdrücken, wenn alle Empfänger aus meinen Domains sind</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>307, 280</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 15</value>
+  </data>
+  <data name="CountDownTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 275</value>
+  </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 21</value>
+    <value>250, 15</value>
   </data>
-  <data name="btn_DoSend.Text" xml:space="preserve">
-    <value>送信</value>
+  <data name="countdownSeconds.Text" xml:space="preserve">
+    <value>Sekunde(n)</value>
   </data>
-  <data name="btn_SendCancel.Text" xml:space="preserve">
-    <value>キャンセル</value>
-  </data>
-  <data name="columnMyMailAddress.Text" xml:space="preserve">
-    <value>組織内へのメール</value>
-  </data>
-  <data name="columnOtherMailAddress.Text" xml:space="preserve">
-    <value>組織外へのメール</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>宛先メールアドレスの確認</value>
-  </data>
-  <data name="confirm_message.Text" xml:space="preserve">
-    <value>宛先メールアドレスを確認してください：</value>
+  <data name="configMessage.Text" xml:space="preserve">
+    <value>Fügen Sie Ihren Gruppendomainnamen hinzu.</value>
   </data>
 </root>

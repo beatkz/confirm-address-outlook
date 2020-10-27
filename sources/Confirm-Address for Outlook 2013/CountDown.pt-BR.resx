@@ -118,25 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 21</value>
+  <data name="counterLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 7</value>
   </data>
-  <data name="btn_DoSend.Text" xml:space="preserve">
-    <value>送信</value>
+  <data name="CountDownMsg1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 30</value>
   </data>
-  <data name="btn_SendCancel.Text" xml:space="preserve">
-    <value>キャンセル</value>
+  <data name="CountDownMsg1.Text" xml:space="preserve">
+    <value>Contagem Regressiva...</value>
   </data>
-  <data name="columnMyMailAddress.Text" xml:space="preserve">
-    <value>組織内へのメール</value>
+  <data name="CountDownMsg2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 7</value>
   </data>
-  <data name="columnOtherMailAddress.Text" xml:space="preserve">
-    <value>組織外へのメール</value>
+  <data name="CountDownMsg2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 30</value>
+  </data>
+  <data name="CountDownMsg2.Text" xml:space="preserve">
+    <value>segundo</value>
+  </data>
+  <data name="doOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 52</value>
+  </data>
+  <data name="doOK.Text" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="doCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 52</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>385, 92</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>宛先メールアドレスの確認</value>
-  </data>
-  <data name="confirm_message.Text" xml:space="preserve">
-    <value>宛先メールアドレスを確認してください：</value>
+    <value>Contagem Regressiva</value>
   </data>
 </root>

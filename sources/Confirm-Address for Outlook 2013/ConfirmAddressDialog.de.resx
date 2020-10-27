@@ -119,24 +119,21 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 21</value>
+    <value>360, 21</value>
   </data>
   <data name="btn_DoSend.Text" xml:space="preserve">
-    <value>送信</value>
-  </data>
-  <data name="btn_SendCancel.Text" xml:space="preserve">
-    <value>キャンセル</value>
+    <value>Senden</value>
   </data>
   <data name="columnMyMailAddress.Text" xml:space="preserve">
-    <value>組織内へのメール</value>
+    <value>Ihre Domain-Adressen</value>
   </data>
   <data name="columnOtherMailAddress.Text" xml:space="preserve">
-    <value>組織外へのメール</value>
+    <value>Andere Domain-Adressen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>宛先メールアドレスの確認</value>
+    <value>E-Mail Adressen bestätigen</value>
   </data>
   <data name="confirm_message.Text" xml:space="preserve">
-    <value>宛先メールアドレスを確認してください：</value>
+    <value>Bitte bestätigen Sie die folgenden E-Mail Adressen:</value>
   </data>
 </root>

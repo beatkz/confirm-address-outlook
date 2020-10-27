@@ -130,13 +130,13 @@
     <value>ドメイン名</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 15</value>
+  <data name="credit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 15</value>
   </data>
   <data name="OriginalURLLink.Size" type="System.Drawing.Size, System.Drawing">
     <value>269, 15</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="credit2.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 15</value>
   </data>
   <data name="PortingURLLink.Size" type="System.Drawing.Size, System.Drawing">
@@ -169,22 +169,22 @@
   <data name="NoDisplayInsiderDomainOnly.Text" xml:space="preserve">
     <value>自ドメイン宛てのメール送信時は確認ダイアログを表示しない</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>347, 280</value>
+  <data name="countdownSeconds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 280</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="countdownSeconds.Size" type="System.Drawing.Size, System.Drawing">
     <value>19, 15</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
+  <data name="countdownSeconds.Text" xml:space="preserve">
     <value>秒</value>
   </data>
   <data name="CountDownTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>291, 275</value>
+    <value>276, 275</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="configMessage.Size" type="System.Drawing.Size, System.Drawing">
     <value>291, 15</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="configMessage.Text" xml:space="preserve">
     <value>あなたの組織のメールアドレスのドメイン名を指定してください。</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">

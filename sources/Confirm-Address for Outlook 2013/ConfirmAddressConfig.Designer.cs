@@ -34,19 +34,19 @@
             this.BtnRemove = new System.Windows.Forms.Button();
             this.MyDomains = new System.Windows.Forms.ListView();
             this.colhMyDomain = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.AddonTitle = new System.Windows.Forms.Label();
+            this.credit1 = new System.Windows.Forms.Label();
             this.OriginalURLLink = new System.Windows.Forms.LinkLabel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.credit2 = new System.Windows.Forms.Label();
             this.PortingURLLink = new System.Windows.Forms.LinkLabel();
             this.AppVersion = new System.Windows.Forms.Label();
             this.InsiderDomainBatchCheck = new System.Windows.Forms.CheckBox();
             this.OutsiderDomainBatchCheck = new System.Windows.Forms.CheckBox();
             this.CountDown = new System.Windows.Forms.CheckBox();
             this.NoDisplayInsiderDomainOnly = new System.Windows.Forms.CheckBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.countdownSeconds = new System.Windows.Forms.Label();
             this.CountDownTime = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
+            this.configMessage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.CountDownTime)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,15 +86,15 @@
             // 
             resources.ApplyResources(this.colhMyDomain, "colhMyDomain");
             // 
-            // label2
+            // AddonTitle
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.AddonTitle, "AddonTitle");
+            this.AddonTitle.Name = "AddonTitle";
             // 
-            // label3
+            // credit1
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            resources.ApplyResources(this.credit1, "credit1");
+            this.credit1.Name = "credit1";
             // 
             // OriginalURLLink
             // 
@@ -103,10 +103,10 @@
             this.OriginalURLLink.TabStop = true;
             this.OriginalURLLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OriginalURLLink_LinkClicked);
             // 
-            // label4
+            // credit2
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.credit2, "credit2");
+            this.credit2.Name = "credit2";
             // 
             // PortingURLLink
             // 
@@ -148,42 +148,42 @@
             this.NoDisplayInsiderDomainOnly.UseVisualStyleBackColor = true;
             this.NoDisplayInsiderDomainOnly.Click += new System.EventHandler(this.CheckChangedEvent);
             // 
-            // label5
+            // countdownSeconds
             // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
+            resources.ApplyResources(this.countdownSeconds, "countdownSeconds");
+            this.countdownSeconds.Name = "countdownSeconds";
             // 
             // CountDownTime
             // 
             resources.ApplyResources(this.CountDownTime, "CountDownTime");
             this.CountDownTime.Name = "CountDownTime";
             // 
-            // label1
+            // configMessage
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.configMessage, "configMessage");
+            this.configMessage.Name = "configMessage";
             // 
             // ConfirmAddressConfig
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.CountDownTime);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.countdownSeconds);
             this.Controls.Add(this.NoDisplayInsiderDomainOnly);
             this.Controls.Add(this.CountDown);
             this.Controls.Add(this.OutsiderDomainBatchCheck);
             this.Controls.Add(this.InsiderDomainBatchCheck);
             this.Controls.Add(this.AppVersion);
             this.Controls.Add(this.PortingURLLink);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.credit2);
             this.Controls.Add(this.OriginalURLLink);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.credit1);
+            this.Controls.Add(this.AddonTitle);
             this.Controls.Add(this.MyDomains);
             this.Controls.Add(this.BtnRemove);
             this.Controls.Add(this.BtnEdit);
             this.Controls.Add(this.BtnAdd);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.configMessage);
             this.Name = "ConfirmAddressConfig";
             ((System.ComponentModel.ISupportInitialize)(this.CountDownTime)).EndInit();
             this.ResumeLayout(false);
@@ -197,18 +197,18 @@
         private System.Windows.Forms.Button BtnRemove;
         private System.Windows.Forms.ListView MyDomains;
         private System.Windows.Forms.ColumnHeader colhMyDomain;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label AddonTitle;
+        private System.Windows.Forms.Label credit1;
         private System.Windows.Forms.LinkLabel OriginalURLLink;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label credit2;
         private System.Windows.Forms.LinkLabel PortingURLLink;
         private System.Windows.Forms.Label AppVersion;
         private System.Windows.Forms.CheckBox InsiderDomainBatchCheck;
         private System.Windows.Forms.CheckBox OutsiderDomainBatchCheck;
         private System.Windows.Forms.CheckBox CountDown;
         private System.Windows.Forms.CheckBox NoDisplayInsiderDomainOnly;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label countdownSeconds;
         private System.Windows.Forms.NumericUpDown CountDownTime;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label configMessage;
     }
 }

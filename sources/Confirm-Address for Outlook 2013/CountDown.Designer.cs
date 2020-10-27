@@ -54,15 +54,15 @@
             // 
             // doOK
             // 
-            this.doOK.DialogResult = System.Windows.Forms.DialogResult.OK;
             resources.ApplyResources(this.doOK, "doOK");
+            this.doOK.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.doOK.Name = "doOK";
             this.doOK.UseVisualStyleBackColor = true;
             // 
             // doCancel
             // 
-            this.doCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.doCancel, "doCancel");
+            this.doCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.doCancel.Name = "doCancel";
             this.doCancel.UseVisualStyleBackColor = true;
             // 

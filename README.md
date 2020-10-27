@@ -8,7 +8,7 @@ Outlook version ported by Keiji Momose. https://github.com/beatkz/confirm-addres
 ## Build with Visual Studio ##
 
 * pfx file is not included, so create a long-term self-signed certificate. Refer to [this blog entry](https://mseeeen.msen.jp/code-signing-certificate/)(in Japanese)
-* Open "Confirm-Address for Outlook.sln".
+* Open "Confirm-AddressforOutlook.sln".
 * Open properties C# project at Solution Explorer.
 * Click "Signature", and set created self-signed certificate to ClickOnce Manifest and assembly.
 * Set solution config (Debug or Release).

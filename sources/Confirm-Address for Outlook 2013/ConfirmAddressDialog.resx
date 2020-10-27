@@ -117,140 +117,80 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Please confirm the following e-mail addresses:</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_SendCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="confirm_message.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_DoSend.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 35</value>
+  <data name="confirm_message.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="columnHCheck.Width" type="System.Int32, mscorlib">
-    <value>24</value>
+  <data name="confirm_message.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 9</value>
   </data>
-  <data name="&gt;&gt;columnHeader2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="confirm_message.Size" type="System.Drawing.Size, System.Drawing">
+    <value>331, 21</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="confirm_message.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="btn_SendCancel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="confirm_message.Text" xml:space="preserve">
+    <value>Please confirm the following e-mail addresses:</value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 5, 3, 5</value>
+  <data name="&gt;&gt;confirm_message.Name" xml:space="preserve">
+    <value>confirm_message</value>
   </data>
-  <data name="ExternalMailAddressList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>564, 138</value>
+  <data name="&gt;&gt;confirm_message.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;confirm_message.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;confirm_message.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="btn_DoSend.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="btn_DoSend.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;InternalMailAddressList.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="InternalMailAddressList.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_DoSend.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="&gt;&gt;btn_DoSend.Name" xml:space="preserve">
-    <value>btn_DoSend</value>
-  </data>
-  <data name="&gt;&gt;InternalMailAddressList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;InternalMailAddressList.Name" xml:space="preserve">
-    <value>InternalMailAddressList</value>
-  </data>
-  <data name="&gt;&gt;btn_SendCancel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="columnHeader2.Text" xml:space="preserve">
-    <value>Other domain addresses</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="columnHCheck.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>331, 21</value>
-  </data>
-  <data name="&gt;&gt;btn_DoSend.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="ExternalMailAddressList.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;columnHCheck.Name" xml:space="preserve">
-    <value>columnHCheck</value>
   </data>
   <data name="btn_DoSend.Location" type="System.Drawing.Point, System.Drawing">
     <value>384, 333</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 9</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_DoSend.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="ExternalMailAddressList.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="btn_DoSend.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 35</value>
   </data>
-  <data name="&gt;&gt;btn_SendCancel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btn_DoSend.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
+  <data name="btn_DoSend.Text" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="&gt;&gt;btn_DoSend.Name" xml:space="preserve">
+    <value>btn_DoSend</value>
   </data>
   <data name="&gt;&gt;btn_DoSend.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ExternalMailAddressList.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_DoSend.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btn_SendCancel.Name" xml:space="preserve">
-    <value>btn_SendCancel</value>
+  <data name="&gt;&gt;btn_DoSend.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;columnHCheck.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_SendCancel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
-  <data name="&gt;&gt;btn_SendCancel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;InternalMailAddressList.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="btn_SendCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btn_SendCancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>497, 333</value>
-  </data>
-  <data name="columnMailAddress.Text" xml:space="preserve">
-    <value>Your domain addresses</value>
-  </data>
-  <data name="btn_DoSend.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
   </data>
   <data name="btn_SendCancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -258,85 +198,145 @@
   <data name="btn_SendCancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 35</value>
   </data>
-  <data name="&gt;&gt;columnMailAddress.Name" xml:space="preserve">
-    <value>columnMailAddress</value>
-  </data>
-  <data name="&gt;&gt;columnHeader1.Name" xml:space="preserve">
-    <value>columnHeader1</value>
-  </data>
-  <data name="btn_DoSend.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;ExternalMailAddressList.Name" xml:space="preserve">
-    <value>ExternalMailAddressList</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_DoSend.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ConfirmAddressDialog</value>
-  </data>
-  <data name="InternalMailAddressList.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Confirm e-mail addresses</value>
-  </data>
-  <data name="&gt;&gt;columnHeader2.Name" xml:space="preserve">
-    <value>columnHeader2</value>
-  </data>
-  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="InternalMailAddressList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>564, 138</value>
-  </data>
-  <data name="&gt;&gt;ExternalMailAddressList.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="btn_SendCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="btn_SendCancel.Text" xml:space="preserve">
     <value>Cancel</value>
   </data>
-  <data name="columnMailAddress.Width" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;btn_SendCancel.Name" xml:space="preserve">
+    <value>btn_SendCancel</value>
+  </data>
+  <data name="&gt;&gt;btn_SendCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_SendCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_SendCancel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="columnBatchCheckMy.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="columnBatchCheckMy.Width" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="columnMyMailAddress.Text" xml:space="preserve">
+    <value>Your domain addresses</value>
+  </data>
+  <data name="columnMyMailAddress.Width" type="System.Int32, mscorlib">
     <value>512</value>
   </data>
-  <data name="btn_DoSend.Text" xml:space="preserve">
-    <value>Send</value>
-  </data>
-  <data name="&gt;&gt;columnMailAddress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ExternalMailAddressList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 188</value>
-  </data>
-  <data name="btn_SendCancel.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="InternalMailAddressList.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>591, 374</value>
-  </data>
-  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
-    <value>512</value>
-  </data>
-  <data name="&gt;&gt;columnHeader1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="InternalMailAddressList.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 33</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="InternalMailAddressList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 138</value>
+  </data>
+  <data name="InternalMailAddressList.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;InternalMailAddressList.Name" xml:space="preserve">
+    <value>InternalMailAddressList</value>
+  </data>
+  <data name="&gt;&gt;InternalMailAddressList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;InternalMailAddressList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;InternalMailAddressList.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="columnBatchCheckOther.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="columnBatchCheckOther.Width" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="columnOtherMailAddress.Text" xml:space="preserve">
+    <value>Other domain addresses</value>
+  </data>
+  <data name="columnOtherMailAddress.Width" type="System.Int32, mscorlib">
+    <value>512</value>
+  </data>
+  <data name="ExternalMailAddressList.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="ExternalMailAddressList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 188</value>
+  </data>
+  <data name="ExternalMailAddressList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 138</value>
+  </data>
+  <data name="ExternalMailAddressList.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;ExternalMailAddressList.Name" xml:space="preserve">
+    <value>ExternalMailAddressList</value>
   </data>
   <data name="&gt;&gt;ExternalMailAddressList.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;ExternalMailAddressList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ExternalMailAddressList.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>591, 374</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Confirm e-mail addresses</value>
+  </data>
+  <data name="&gt;&gt;columnBatchCheckMy.Name" xml:space="preserve">
+    <value>columnBatchCheckMy</value>
+  </data>
+  <data name="&gt;&gt;columnBatchCheckMy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnMyMailAddress.Name" xml:space="preserve">
+    <value>columnMyMailAddress</value>
+  </data>
+  <data name="&gt;&gt;columnMyMailAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnBatchCheckOther.Name" xml:space="preserve">
+    <value>columnBatchCheckOther</value>
+  </data>
+  <data name="&gt;&gt;columnBatchCheckOther.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnOtherMailAddress.Name" xml:space="preserve">
+    <value>columnOtherMailAddress</value>
+  </data>
+  <data name="&gt;&gt;columnOtherMailAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ConfirmAddressDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
