@@ -1,7 +1,7 @@
 ﻿# confirm-address-for-outlook #
 
 Original "Confirm-Address" by Meatian. https://github.com/Meatian/confirm-address/  
-Outlook version ported by Keiji Momose.
+Outlook version ported by Keiji Momose. https://github.com/beatkz/confirm-address-outlook/
 
 # How to create the release package #
 
