@@ -47,26 +47,26 @@
             // 
             // btn_DoSend
             // 
-            this.btn_DoSend.DialogResult = System.Windows.Forms.DialogResult.OK;
             resources.ApplyResources(this.btn_DoSend, "btn_DoSend");
+            this.btn_DoSend.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btn_DoSend.Name = "btn_DoSend";
             this.btn_DoSend.UseVisualStyleBackColor = true;
             // 
             // btn_SendCancel
             // 
-            this.btn_SendCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btn_SendCancel, "btn_SendCancel");
+            this.btn_SendCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_SendCancel.Name = "btn_SendCancel";
             this.btn_SendCancel.UseVisualStyleBackColor = true;
             // 
             // InternalMailAddressList
             // 
+            resources.ApplyResources(this.InternalMailAddressList, "InternalMailAddressList");
             this.InternalMailAddressList.CheckBoxes = true;
             this.InternalMailAddressList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHCheck,
             this.columnMailAddress});
             this.InternalMailAddressList.HideSelection = false;
-            resources.ApplyResources(this.InternalMailAddressList, "InternalMailAddressList");
             this.InternalMailAddressList.Name = "InternalMailAddressList";
             this.InternalMailAddressList.UseCompatibleStateImageBehavior = false;
             this.InternalMailAddressList.View = System.Windows.Forms.View.Details;
@@ -83,12 +83,12 @@
             // 
             // ExternalMailAddressList
             // 
+            resources.ApplyResources(this.ExternalMailAddressList, "ExternalMailAddressList");
             this.ExternalMailAddressList.CheckBoxes = true;
             this.ExternalMailAddressList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
             this.ExternalMailAddressList.HideSelection = false;
-            resources.ApplyResources(this.ExternalMailAddressList, "ExternalMailAddressList");
             this.ExternalMailAddressList.Name = "ExternalMailAddressList";
             this.ExternalMailAddressList.UseCompatibleStateImageBehavior = false;
             this.ExternalMailAddressList.View = System.Windows.Forms.View.Details;

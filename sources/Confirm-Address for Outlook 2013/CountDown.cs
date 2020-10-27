@@ -45,5 +45,10 @@ namespace Confirm_Address_for_Outlook_2013
                 counterLabel.Text = limit.ToString();
             }
         }
+
+        private void CountDownMsg2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

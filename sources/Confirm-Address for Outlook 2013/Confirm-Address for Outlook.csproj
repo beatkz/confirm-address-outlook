@@ -26,9 +26,10 @@
     <NoStandardLibraries>false</NoStandardLibraries>
     <RootNamespace>Confirm_Address_for_Outlook_2013</RootNamespace>
     <AssemblyName>Confirm-AddressForOl</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <DefineConstants>VSTO40</DefineConstants>
     <IsWebBootstrapper>False</IsWebBootstrapper>
+    <TargetFrameworkProfile />
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <PublishUrl>D:\Users\kmomose\Desktop\Confirm-Address for Outlook 2013\</PublishUrl>
     <InstallUrl />
@@ -49,6 +50,11 @@
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5.2 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 および x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -197,11 +203,20 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <EmbeddedResource Include="ConfirmAddressConfig.ja.resx">
+      <DependentUpon>ConfirmAddressConfig.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConfirmAddressConfig.resx">
       <DependentUpon>ConfirmAddressConfig.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmAddressDialog.ja.resx">
+      <DependentUpon>ConfirmAddressDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConfirmAddressDialog.resx">
       <DependentUpon>ConfirmAddressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountDown.ja.resx">
+      <DependentUpon>CountDown.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CountDown.resx">
       <DependentUpon>CountDown.cs</DependentUpon>
@@ -214,6 +229,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
     <None Include="Confirm-Address for Outlook_1_TemporaryKey.pfx" />
@@ -254,7 +270,7 @@
     <ManifestCertificateThumbprint>78A84C98462A3532C3D3C31671AD80B199C88591</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>confirm-address.pfx</AssemblyOriginatorKeyFile>
