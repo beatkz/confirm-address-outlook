@@ -1,0 +1,107 @@
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csprojAssemblyReference.cache
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm_Address_for_Outlook_2013.ConfirmAddressDialog.resources
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm_Address_for_Outlook_2013.confirmAddressMyDomain.resources
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm_Address_for_Outlook_2013.Properties.Resources.resources
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csproj.GenerateResource.cache
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll.config
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.pdb
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll.manifest
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.vsto
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Common.dll
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.dll
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Outlook.dll
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.v4.0.Framework.dll
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.VisualStudio.Tools.Applications.Runtime.dll
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csproj.CoreCompileInputs.cache
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csproj.CopyComplete
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-AddressForOl.dll
+D:\Users\kmomose\Documents\Visual Studio 2017\Projects\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-AddressForOl.pdb
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll.config
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.pdb
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll.manifest
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.vsto
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Common.dll
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.dll
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Outlook.dll
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.v4.0.Framework.dll
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.VisualStudio.Tools.Applications.Runtime.dll
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csprojAssemblyReference.cache
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm_Address_for_Outlook_2013.ConfirmAddressConfig.resources
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm_Address_for_Outlook_2013.ConfirmAddressDialog.resources
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm_Address_for_Outlook_2013.Properties.Resources.resources
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csproj.GenerateResource.cache
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csproj.CoreCompileInputs.cache
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csproj.CopyComplete
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-AddressForOl.dll
+D:\Users\kmomose\Desktop\!Favs\!Develop\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-AddressForOl.pdb
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll.config
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.pdb
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll.CodeAnalysisLog.xml
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll.lastcodeanalysissucceeded
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll.manifest
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.vsto
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Common.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Outlook.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.v4.0.Framework.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\bin\Release\Microsoft.VisualStudio.Tools.Applications.Runtime.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm_Address_for_Outlook_2013.ConfirmAddressConfig.resources
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm_Address_for_Outlook_2013.ConfirmAddressDialog.resources
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm_Address_for_Outlook_2013.Properties.Resources.resources
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csproj.GenerateResource.cache
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csproj.CoreCompileInputs.cache
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csproj.CopyComplete
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-AddressForOl.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\Done\Confirm-Address for Outlook 2013\Confirm-Address for Outlook 2013\obj\Release\Confirm-AddressForOl.pdb
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll.config
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.pdb
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll.manifest
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.vsto
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Common.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Outlook.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.v4.0.Framework.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Microsoft.VisualStudio.Tools.Applications.Runtime.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csprojAssemblyReference.cache
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm_Address_for_Outlook_2013.ConfirmAddressConfig.resources
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm_Address_for_Outlook_2013.ConfirmAddressDialog.resources
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm_Address_for_Outlook_2013.Properties.Resources.resources
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csproj.GenerateResource.cache
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csproj.CoreCompileInputs.cache
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csproj.CopyComplete
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm-AddressForOl.dll
+D:\Users\kmomose\Desktop\!Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm-AddressForOl.pdb
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll.config
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.pdb
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.dll.manifest
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Confirm-AddressForOl.vsto
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Common.dll
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.dll
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Outlook.dll
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Microsoft.Office.Tools.v4.0.Framework.dll
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\bin\Release\Microsoft.VisualStudio.Tools.Applications.Runtime.dll
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csprojAssemblyReference.cache
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm_Address_for_Outlook_2013.ConfirmAddressConfig.resources
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm_Address_for_Outlook_2013.ConfirmAddressDialog.resources
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm_Address_for_Outlook_2013.CountDown.resources
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm_Address_for_Outlook_2013.Properties.Resources.resources
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csproj.GenerateResource.cache
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csproj.CoreCompileInputs.cache
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm-Address for Outlook.csproj.CopyComplete
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm-AddressForOl.dll
+D:\Users\kmomose\Desktop\Favs\Develop\confirm-address-outlook\outlook\Confirm-Address for Outlook 2013\obj\Release\Confirm-AddressForOl.pdb

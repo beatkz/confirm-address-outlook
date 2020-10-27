@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Confirm-AddressForOl.dll" version="1.4.1.1" publicKeyToken="8cd8ab51052ebc43" language="neutral" processorArchitecture="msil" type="win32" />
+  <description xmlns="urn:schemas-microsoft-com:asm.v1">Confirm-AddressForOl</description>
+  <application />
+  <entryPoint>
+    <co.v1:customHostSpecified />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC マニフェスト オプション
+          Windows のユーザー アカウント制御のレベルを変更するには、
+          requestedExecutionLevel ノードを以下のいずれかで置換します。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         下位互換性を保つためにファイルおよびレジストリの仮想化を使用する場合、
+         requestedExecutionLevel ノードを削除します。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.CSharp" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualBasic" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="mscorlib" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Deployment" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Drawing" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Windows.Forms" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Xml" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Confirm-AddressForOl.dll" size="47104">
+      <assemblyIdentity name="Confirm-AddressForOl" version="1.0.0.0" publicKeyToken="8CD8AB51052EBC43" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Zl8QpYeZHtU8ONi03BQAaka+ftrNnrClWSLL6nQKn4Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.dll" size="16048">
+      <assemblyIdentity name="Microsoft.Office.Tools" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Vgvc0uYwZVUc7LUY2JZ9KAzZj7xIADwUKXmP0lBdgwU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Common.dll" size="92344">
+      <assemblyIdentity name="Microsoft.Office.Tools.Common" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9ksp+/YUo4Q2xUje3aOMuS2A+gI7SsBRbCG78UDZKa4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Common.v4.0.Utilities.dll" size="32664">
+      <assemblyIdentity name="Microsoft.Office.Tools.Common.v4.0.Utilities" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jLCTF8Mm6bD4PDN+rnzN6q0+ReXaNgPh68kMWgatFwI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Outlook.dll" size="57024">
+      <assemblyIdentity name="Microsoft.Office.Tools.Outlook" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Af3Ja3dJIvZ2Nojm+KgZAIfUeRS0A4qi6oCrE2NPKO4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll" size="49048">
+      <assemblyIdentity name="Microsoft.Office.Tools.Outlook.v4.0.Utilities" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>AY9f4ogMVBnNqNKvGc0Ko8U3XsIDeLhU/c5jky7x2Zc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.v4.0.Framework.dll" size="28360">
+      <assemblyIdentity name="Microsoft.Office.Tools.v4.0.Framework" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ISZh8727tCrrTeM0j3FK7F6rylc8msZemTZgJIz8QMI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Tools.Applications.Runtime.dll" size="83168">
+      <assemblyIdentity name="Microsoft.VisualStudio.Tools.Applications.Runtime" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vDNwPlxZTsrepY5kiLFDjUnvE55xbfsf7N7uzyD0qzo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Confirm-AddressForOl.dll.config" size="122">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xT8zpcOn36AF9ivJ2Bro1uXrAZRjvSmGwyygDOlATxo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <vstav3:addIn xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">
+    <vstav3:entryPointsCollection>
+      <vstav3:entryPoints>
+        <vstav3:entryPoint class="Confirm_Address_for_Outlook_2013.ThisAddIn">
+          <assemblyIdentity name="Confirm-AddressForOl" version="1.0.0.0" publicKeyToken="8CD8AB51052EBC43" language="neutral" processorArchitecture="msil" />
+        </vstav3:entryPoint>
+      </vstav3:entryPoints>
+    </vstav3:entryPointsCollection>
+    <vstav3:update enabled="false" />
+    <vstav3:application>
+      <vstov4:customizations xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">
+        <vstov4:customization>
+          <vstov4:appAddIn application="Outlook" loadBehavior="3" keyName="Confirm-AddressForOl">
+            <vstov4:friendlyName>Confirm-Address for Outlook 2013</vstov4:friendlyName>
+            <vstov4:description>Confirm-AddressForOl</vstov4:description>
+            <vstov4.1:ribbonTypes xmlns:vstov4.1="urn:schemas-microsoft-com:vsto.v4.1" />
+          </vstov4:appAddIn>
+        </vstov4:customization>
+      </vstov4:customizations>
+    </vstav3:application>
+  </vstav3:addIn>
+<publisherIdentity name="CN=Confirm-Address, O=Meatian, C=JP" issuerKeyHash="62d1d6907bcc2a39d41c8866ac6f6fb57e43e4ec" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>/PDtm9Rk9MYZZBImlAuCjn1ocCo=</DigestValue></Reference></SignedInfo><SignatureValue>nxEjp+DBDK65Frm2OLBLQvZSUasPJFWAB6HPRj+9aq92d4euYRclAY36poOn3fpRYk9sOF2UtDgCGIsCLrQeKGGgKrexJNOykq1Ro24Kr2QPycogt7OmoGCykWIW70MzySVVaZe9XHC9s87+vJ2nYvZfRVLXDeEhaiuB+PXEFMnmB0r0GX6S6/GbE/lViPNb8JoIq5gK63uFwyPxknvTRgvSUTRBQIUNpzgxWM42O5R3125tBQkfw/zw2ESrUCcFZ6dlAG7x8fzwlTiS7mlXgpH8gvDY78BvlmtWz0iDmjLFJLMQ7MtoA9mJRDmGikiZkyMmaoT4rGZQPiLBcCJ0DA==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pkKoxEIHHd3Fcdj1urSGx1eG/FsnxwBcrRymyyKrNdUb72IHXi3Qvn+TVBPgLpxUGRohWas4QL2Gal80IJFSTktV/1jzuum5gG8ezpia5XLe5r/UHZsNzORPoLbd4i6ZIf8nTn8GX1SNxE8ZUHn797QlCm/YDECFVw9AUwGBL3Tvlo2YSc3SUlacAGIYEWhd1zGdMc2wvggetLtZ2gYtOgPgbn/fC82RA0ABa8xAuxBiPDgEONTWl/w2UX/WVbD/+PRE0DzM244Xfu1UCuyEnKZkrnFPNaWEtqngRw0opmECjIrrGmsIgK9FVVXmME8nU8QsTu0fgzYwoeqGNGDzPQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2a70687d8e820b9426126419c6f464d49bedf0fc" Description="" Url=""><as:assemblyIdentity name="Confirm-AddressForOl.dll" version="1.4.1.1" publicKeyToken="8cd8ab51052ebc43" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Confirm-Address, O=Meatian, C=JP</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>VDCAxuYBHLEhNEOy1F4WW0rL/lQ=</DigestValue></Reference></SignedInfo><SignatureValue>AtN7lgGCnIKumAr6s5qr2VlQWh8/RmITKKemlHStVNwvrIKAMxZ7X2ZH0YObNJV4h5gVPzkX6NqFc22hbaWRLnWwRjHvjJq8BGUGJNGIhNkBK007GLGf4T1ZCF0GlzObLU3gVyKEdA280bTUTeNGnTE/zJTIhcpBGEemf1Ey/PN2+K60hbHveFCGFUxKQzkWEU/leZvmvbxYjBK8K7yev0XmzP8DUshloPSUo+VhXFQm86kxGOlL8hC1H3Hv7WREh3i3kFVXzJnA1aUXzdhPtn1nIRpLE4bBk7xzWRtaHeHHGbmblJo6pQhHI56kxSSvtkTDUoDHzD2WueNhVGejyw==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pkKoxEIHHd3Fcdj1urSGx1eG/FsnxwBcrRymyyKrNdUb72IHXi3Qvn+TVBPgLpxUGRohWas4QL2Gal80IJFSTktV/1jzuum5gG8ezpia5XLe5r/UHZsNzORPoLbd4i6ZIf8nTn8GX1SNxE8ZUHn797QlCm/YDECFVw9AUwGBL3Tvlo2YSc3SUlacAGIYEWhd1zGdMc2wvggetLtZ2gYtOgPgbn/fC82RA0ABa8xAuxBiPDgEONTWl/w2UX/WVbD/+PRE0DzM244Xfu1UCuyEnKZkrnFPNaWEtqngRw0opmECjIrrGmsIgK9FVVXmME8nU8QsTu0fgzYwoeqGNGDzPQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIDYjCCAk6gAwIBAgIQHYIptUGZmJpE0dTrbPc1ujAJBgUrDgMCHQUAMDkxCzAJBgNVBAYTAkpQMRAwDgYDVQQKEwdNZWF0aWFuMRgwFgYDVQQDEw9Db25maXJtLUFkZHJlc3MwHhcNMTkxMjMxMTUwMDAwWhcNMzcxMjMxMTUwMDAwWjA5MQswCQYDVQQGEwJKUDEQMA4GA1UEChMHTWVhdGlhbjEYMBYGA1UEAxMPQ29uZmlybS1BZGRyZXNzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApkKoxEIHHd3Fcdj1urSGx1eG/FsnxwBcrRymyyKrNdUb72IHXi3Qvn+TVBPgLpxUGRohWas4QL2Gal80IJFSTktV/1jzuum5gG8ezpia5XLe5r/UHZsNzORPoLbd4i6ZIf8nTn8GX1SNxE8ZUHn797QlCm/YDECFVw9AUwGBL3Tvlo2YSc3SUlacAGIYEWhd1zGdMc2wvggetLtZ2gYtOgPgbn/fC82RA0ABa8xAuxBiPDgEONTWl/w2UX/WVbD/+PRE0DzM244Xfu1UCuyEnKZkrnFPNaWEtqngRw0opmECjIrrGmsIgK9FVVXmME8nU8QsTu0fgzYwoeqGNGDzPQIDAQABo24wbDBqBgNVHQEEYzBhgBALNxWAU3sbhD+GSDnY4lWWoTswOTELMAkGA1UEBhMCSlAxEDAOBgNVBAoTB01lYXRpYW4xGDAWBgNVBAMTD0NvbmZpcm0tQWRkcmVzc4IQHYIptUGZmJpE0dTrbPc1ujAJBgUrDgMCHQUAA4IBAQBYftNxZGGbJdExhjjX++dViJQ2pg7LIzE1MzkmnTOKJDDhcoEMI2sOTy4OnS0hUdLDRQqm4v22x24fYh58koi5rNwJI+R6nL4bDdsNYT75UT8CIA5nCqpk5ppqH+KH6HDpz4Ry09Njo8JnnopkxhtVv08zFnYtrsf7lTACJQAiyL5qayvhWh0OXPvApVRcs0iXFLRwxrqrr+Zly5d/k0RyvOPRnHlMh/VzHXiGFtS/5/3dNYpL5R320iJWLijj8F0UgtvasBJHTvG4mAoCNRjlsFOkm0rPFAKMVTyPLhb1FNFtPlbk33HrPO+VKEndfdeeAJluYOGQrZ4kMTEQ2STo</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
