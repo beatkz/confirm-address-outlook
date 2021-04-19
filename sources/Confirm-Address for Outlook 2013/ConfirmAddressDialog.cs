@@ -10,8 +10,6 @@ namespace Confirm_Address_for_Outlook_2013
         private List<String> externalList = new List<string> { };
         private string mailBody;
 
-        private long fullEmailAddressCount = new long();
-        private long fullEmailAddressCheckedCount = new long();
         private bool isInsiderMailAddressAllChecked = false;
         private bool isOutsiderMailAddressAllChecked = false;
 
@@ -64,11 +62,9 @@ namespace Confirm_Address_for_Outlook_2013
         {
             AddListViewItem(ref internalList, ref InternalMailAddressList);
             AddListViewItem(ref externalList, ref ExternalMailAddressList);
+            mailBodyBox.Text = mailBody;
 
-            BatchCheckButtonSettingfromRegistrySettings();
-            
-            fullEmailAddressCount = InternalMailAddressList.Items.Count + ExternalMailAddressList.Items.Count;
-            fullEmailAddressCheckedCount = 0;
+            BatchCheckButtonSettingfromRegistrySettings();            
         }
 
         private void ConfirmAddressDialog_FormClosing(object sender, FormClosingEventArgs e)
@@ -77,25 +73,41 @@ namespace Confirm_Address_for_Outlook_2013
             externalList.Clear();
             InternalMailAddressList.Items.Clear();
             ExternalMailAddressList.Items.Clear();
+            mailBodyBox.Text = "";
         }
 
         private void MailAddressList_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-            if (e.NewValue == CheckState.Checked){
-                fullEmailAddressCheckedCount++;
-            } else if(e.NewValue == CheckState.Unchecked){
-                fullEmailAddressCheckedCount--;
-            }
+            CheckAllChecked();
+        }
 
-            if (fullEmailAddressCount - fullEmailAddressCheckedCount == 0)
-            {
-                btn_DoSend.Enabled = true;
-            }
-            else
-            {
-                btn_DoSend.Enabled = false;
-            }
+        private void CheckAllChecked()
+        {
+            var id_checkboxes = InternalMailAddressList.Items;
+            var internalConfirmed = JudgeConfirmed(ref id_checkboxes);
 
+            var ed_checkboxes = ExternalMailAddressList.Items;
+            var externalConfirmed = JudgeConfirmed(ref ed_checkboxes);
+
+            var mailHeadConfirmed = ConfirmMailBody.Checked;
+
+            btn_DoSend.Enabled = (internalConfirmed && externalConfirmed && mailHeadConfirmed);
+        }
+
+        private bool JudgeConfirmed(ref ListView.ListViewItemCollection listitems)
+        {
+            var confirmed = true;
+            if (listitems.Count > 0)
+            {
+                for (var i = 0; i < listitems.Count; i++)
+                {
+                    if (!listitems[i].Checked)
+                    {
+                        confirmed = false;
+                    }
+                }
+            }
+            return confirmed;
         }
 
         private void MailAddressList_ColumnClick(object sender, ColumnClickEventArgs e)
@@ -121,6 +133,11 @@ namespace Confirm_Address_for_Outlook_2013
                 }
                 
             }
+        }
+
+        private void ConfirmMailBody_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckAllChecked();
         }
     }
 }
