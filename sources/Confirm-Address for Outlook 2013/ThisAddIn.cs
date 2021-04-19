@@ -94,28 +94,7 @@ namespace Confirm_Address_for_Outlook_2013
                 f.Dispose();
             }
 
-            if (result == DialogResult.OK)
-            {
-                var isCountDownRaw = ru.LoadRegInt("CountDown");
-                bool isCountDown = Convert.ToBoolean(isCountDownRaw);
-
-                if (isCountDown)
-                {
-                    var countDownTime = ru.LoadRegInt("CountDownTime");
-                    var cd = new CountDown();
-                    var cdDone = cd.ShowCountDown(countDownTime);
-                    cd.Dispose();
-                    return cdDone;
-                }
-                else
-                {
-                    return result;
-                }
-            }
-            else
-            {
-                return result;
-            }
+            return result;
         }
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)

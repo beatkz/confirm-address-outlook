@@ -136,6 +136,55 @@
   <data name="columnOtherMailAddress.Text" xml:space="preserve">
     <value>組織外へのメール</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ConfirmMailBody.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ConfirmMailBody.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 19</value>
+  </data>
+  <data name="ConfirmMailBody.Text" xml:space="preserve">
+    <value>メール本文の冒頭数行</value>
+  </data>
+  <data name="mailBodyBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CountDownMsg2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 15.75pt</value>
+  </data>
+  <data name="CountDownMsg2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 2</value>
+  </data>
+  <data name="CountDownMsg2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 26</value>
+  </data>
+  <data name="CountDownMsg2.Text" xml:space="preserve">
+    <value>秒で送信します。</value>
+  </data>
+  <data name="CountDownMsg1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 15.75pt</value>
+  </data>
+  <data name="CountDownMsg1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 2</value>
+  </data>
+  <data name="CountDownMsg1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 26</value>
+  </data>
+  <data name="CountDownMsg1.Text" xml:space="preserve">
+    <value>あと</value>
+  </data>
+  <data name="counterLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 15.75pt</value>
+  </data>
+  <data name="counterLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 2</value>
+  </data>
+  <data name="counterLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 26</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Meiryo UI, 9pt</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>宛先メールアドレスの確認</value>
   </data>

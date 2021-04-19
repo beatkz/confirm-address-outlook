@@ -15,6 +15,10 @@ namespace Confirm_Address_for_Outlook_2013
 
         private bool bcInsiderMail;
         private bool bcOutsiderMail;
+        private bool isMailBodyConfirm;
+
+        private int limit;
+        private bool countdown_running = false;
 
 
         public ConfirmAddressDialog()
@@ -49,22 +53,24 @@ namespace Confirm_Address_for_Outlook_2013
             }
         }
 
-        private void BatchCheckButtonSettingfromRegistrySettings()
+        private void SettingsfromRegistrySettings()
         {
             RegUtil ru = new RegUtil();
             bcInsiderMail = Convert.ToBoolean(ru.LoadRegInt("InsiderDomainBatchCheck"));
             InternalMailAddressList.Columns[0].Text = bcInsiderMail ? "✓" : "";
             bcOutsiderMail = Convert.ToBoolean(ru.LoadRegInt("OutsiderDomainBatchCheck"));
             ExternalMailAddressList.Columns[0].Text = bcOutsiderMail ? "✓" : "";
+            isMailBodyConfirm = Convert.ToBoolean(ru.LoadRegInt("ConfirmMailBody"));
+            ConfirmMailBody.Enabled = isMailBodyConfirm;
+            mailBodyBox.Enabled = isMailBodyConfirm;
         }
 
         private void ConfirmAddressDialog_Load(object sender, EventArgs e)
         {
+            SettingsfromRegistrySettings();
             AddListViewItem(ref internalList, ref InternalMailAddressList);
             AddListViewItem(ref externalList, ref ExternalMailAddressList);
-            mailBodyBox.Text = mailBody;
-
-            BatchCheckButtonSettingfromRegistrySettings();            
+            mailBodyBox.Text = isMailBodyConfirm ? mailBody : "";
         }
 
         private void ConfirmAddressDialog_FormClosing(object sender, FormClosingEventArgs e)
@@ -76,38 +82,52 @@ namespace Confirm_Address_for_Outlook_2013
             mailBodyBox.Text = "";
         }
 
-        private void MailAddressList_ItemCheck(object sender, ItemCheckEventArgs e)
+        private void MailAddressList_ItemChecked(object sender, ItemCheckedEventArgs e)
+        {
+            CheckAllChecked();
+        }
+
+        private void ConfirmMailBody_CheckedChanged(object sender, EventArgs e)
         {
             CheckAllChecked();
         }
 
         private void CheckAllChecked()
         {
+            var internalConfirmed = true;
+            var externalConfirmed = true;
+            var mailHeadConfirmed = true;
+
             var id_checkboxes = InternalMailAddressList.Items;
-            var internalConfirmed = JudgeConfirmed(ref id_checkboxes);
-
-            var ed_checkboxes = ExternalMailAddressList.Items;
-            var externalConfirmed = JudgeConfirmed(ref ed_checkboxes);
-
-            var mailHeadConfirmed = ConfirmMailBody.Checked;
-
-            btn_DoSend.Enabled = (internalConfirmed && externalConfirmed && mailHeadConfirmed);
-        }
-
-        private bool JudgeConfirmed(ref ListView.ListViewItemCollection listitems)
-        {
-            var confirmed = true;
-            if (listitems.Count > 0)
+            if (id_checkboxes.Count > 0)
             {
-                for (var i = 0; i < listitems.Count; i++)
+                for (var i = 0; i < id_checkboxes.Count; i++)
                 {
-                    if (!listitems[i].Checked)
+                    if (!id_checkboxes[i].Checked)
                     {
-                        confirmed = false;
+                        internalConfirmed = false;
                     }
                 }
             }
-            return confirmed;
+
+            var ed_checkboxes = ExternalMailAddressList.Items;
+            if (ed_checkboxes.Count > 0)
+            {
+                for (var i = 0; i < ed_checkboxes.Count; i++)
+                {
+                    if (!ed_checkboxes[i].Checked)
+                    {
+                        externalConfirmed = false;
+                    }
+                }
+            }
+
+            if (isMailBodyConfirm)
+            {
+                mailHeadConfirmed = ConfirmMailBody.Checked;
+            }
+
+            btn_DoSend.Enabled = internalConfirmed && externalConfirmed && mailHeadConfirmed;
         }
 
         private void MailAddressList_ColumnClick(object sender, ColumnClickEventArgs e)
@@ -135,9 +155,42 @@ namespace Confirm_Address_for_Outlook_2013
             }
         }
 
-        private void ConfirmMailBody_CheckedChanged(object sender, EventArgs e)
+        private void btn_DoSend_Click(object sender, EventArgs e)
         {
-            CheckAllChecked();
+            RegUtil ru = new RegUtil();
+            var isCountDownRaw = ru.LoadRegInt("CountDown");
+            bool isCountDown = Convert.ToBoolean(isCountDownRaw);
+
+            if (isCountDown && !countdown_running)
+            {
+                var countDownTime = ru.LoadRegInt("CountDownTime");
+                limit = countDownTime;
+                counterLabel.Text = limit.ToString();
+
+                CountdownPanel.Visible = true;
+                Timer timer = new Timer();
+                timer.Tick += new EventHandler(Countdown);
+                timer.Interval = 1000;
+                timer.Start();
+                countdown_running = true;
+            } else
+            {
+                DialogResult = DialogResult.OK;
+            }
+        }
+
+        private void Countdown(object sender, EventArgs e)
+        {
+            limit--;
+            if (limit < 0)
+            {
+                DialogResult = DialogResult.OK;
+                Close();
+            }
+            else
+            {
+                counterLabel.Text = limit.ToString();
+            }
         }
     }
 }
