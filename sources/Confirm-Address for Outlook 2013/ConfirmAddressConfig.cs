@@ -80,6 +80,14 @@ namespace Confirm_Address_for_Outlook_2013
             CountDownTime.Enabled = CountDown.Checked;
             CountDownTime.Value = countDownSec;
 
+            // 本文冒頭行表示
+            var isConfirmMailBody = ru.LoadRegInt("ConfirmMailBody");
+            ConfirmMailBody.Checked = Convert.ToBoolean(isConfirmMailBody);
+            var confirmMailBodyRows = ru.LoadRegInt("ConfirmMailBodyLines");
+            ConfirmMailBodyLines.Enabled = ConfirmMailBody.Checked;
+            ConfirmMailBodyLines.Value = confirmMailBodyRows;
+
+
             // 自ドメイン・他ドメイン一括チェックボタン
             var isInsiderDomainBatchCheck = ru.LoadRegInt("InsiderDomainBatchCheck");
             InsiderDomainBatchCheck.Checked = Convert.ToBoolean(isInsiderDomainBatchCheck);
@@ -126,6 +134,16 @@ namespace Confirm_Address_for_Outlook_2013
                 regPath, "CountDownTime",
                 CountDownTime.Value,
                 Microsoft.Win32.RegistryValueKind.DWord);
+            
+            Microsoft.Win32.Registry.SetValue(
+                regPath, "ConfirmMailBody",
+                ConfirmMailBody.Checked,
+                Microsoft.Win32.RegistryValueKind.DWord);
+
+            Microsoft.Win32.Registry.SetValue(
+                regPath, "ConfirmMailBodyLines",
+                ConfirmMailBodyLines.Value,
+                Microsoft.Win32.RegistryValueKind.DWord);
 
             Microsoft.Win32.Registry.SetValue(
                 regPath, "InsiderDomainBatchCheck",
@@ -168,6 +186,10 @@ namespace Confirm_Address_for_Outlook_2013
                     Convert.ToInt32(CountDown.Checked) },
                 {ru.LoadRegInt("CountDownTime"),
                     Convert.ToInt32(CountDownTime.Value)},
+                {ru.LoadRegInt("ConfirmMailBody"),
+                    Convert.ToInt32(ConfirmMailBody.Checked) },
+                {ru.LoadRegInt("ConfirmMailBodyLines"),
+                    Convert.ToInt32(ConfirmMailBodyLines.Value)},
                 {ru.LoadRegInt("InsiderDomainBatchCheck"),
                     Convert.ToInt32(InsiderDomainBatchCheck.Checked)},
                 {ru.LoadRegInt("OutsiderDomainBatchCheck"),
@@ -199,6 +221,11 @@ namespace Confirm_Address_for_Outlook_2013
             if (((CheckBox)sender).Name == "CountDown")
             {
                 CountDownTime.Enabled = ((CheckBox)sender).Checked;
+            }
+
+            if (((CheckBox)sender).Name == "ConfirmMailBody")
+            {
+                ConfirmMailBodyLines.Enabled = ((CheckBox)sender).Checked;
             }
 
             if (CheckSettingsUpdate())
@@ -302,6 +329,18 @@ namespace Confirm_Address_for_Outlook_2013
         private void OriginalURLLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start(OriginalURLLink.Text);
+        }
+
+        private void ValueChangedEvent(object sender, EventArgs e)
+        {
+            if (CheckSettingsUpdate())
+            {
+                if (_propertyPageSite != null)
+                {
+                    _propertyPageSite.OnStatusChange();
+                }
+            }
+
         }
     }
 }

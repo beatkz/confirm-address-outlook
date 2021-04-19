@@ -147,7 +147,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;confirm_message.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="btn_DoSend.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -156,7 +156,7 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="btn_DoSend.Location" type="System.Drawing.Point, System.Drawing">
-    <value>384, 333</value>
+    <value>352, 463</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_DoSend.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -181,7 +181,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_DoSend.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btn_SendCancel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
@@ -190,7 +190,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_SendCancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>497, 333</value>
+    <value>440, 463</value>
   </data>
   <data name="btn_SendCancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
@@ -214,7 +214,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_SendCancel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="columnBatchCheckMy.Text" xml:space="preserve">
     <value />
@@ -226,7 +226,7 @@
     <value>Your domain addresses</value>
   </data>
   <data name="columnMyMailAddress.Width" type="System.Int32, mscorlib">
-    <value>512</value>
+    <value>475</value>
   </data>
   <data name="InternalMailAddressList.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
@@ -235,7 +235,7 @@
     <value>15, 33</value>
   </data>
   <data name="InternalMailAddressList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>564, 138</value>
+    <value>507, 130</value>
   </data>
   <data name="InternalMailAddressList.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -250,7 +250,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;InternalMailAddressList.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="columnBatchCheckOther.Text" xml:space="preserve">
     <value />
@@ -262,16 +262,16 @@
     <value>Other domain addresses</value>
   </data>
   <data name="columnOtherMailAddress.Width" type="System.Int32, mscorlib">
-    <value>512</value>
+    <value>475</value>
   </data>
   <data name="ExternalMailAddressList.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="ExternalMailAddressList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 188</value>
+    <value>15, 169</value>
   </data>
   <data name="ExternalMailAddressList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>564, 138</value>
+    <value>507, 130</value>
   </data>
   <data name="ExternalMailAddressList.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -286,6 +286,33 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ExternalMailAddressList.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ConfirmMailBody.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ConfirmMailBody.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 305</value>
+  </data>
+  <data name="ConfirmMailBody.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 19</value>
+  </data>
+  <data name="ConfirmMailBody.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="ConfirmMailBody.Text" xml:space="preserve">
+    <value>checkBox1</value>
+  </data>
+  <data name="&gt;&gt;ConfirmMailBody.Name" xml:space="preserve">
+    <value>ConfirmMailBody</value>
+  </data>
+  <data name="&gt;&gt;ConfirmMailBody.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ConfirmMailBody.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ConfirmMailBody.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -295,7 +322,7 @@
     <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>591, 374</value>
+    <value>534, 511</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>

@@ -43,6 +43,7 @@ namespace Confirm_Address_for_Outlook_2013
             List<string> internalList = new List<string> { };
             List<string> externalList = new List<string> { };
             List<string> addressList = new List<string> { };
+            string mailBody;
 
             RegUtil ru = new RegUtil();
             var indomains = ru.LoadRegString("InsiderDomains");
@@ -70,6 +71,9 @@ namespace Confirm_Address_for_Outlook_2013
                 internalList,
                 externalList);
 
+            var printLines = ru.LoadRegInt("ConfirmMailBodyLines");
+            mailBody = caC.getMailBody(mail.Body, printLines);
+
             var isNotDisplayRaw = ru.LoadRegInt("NoDisplayInsiderDomainOnly");
             bool isNotDisplay = Convert.ToBoolean(isNotDisplayRaw);
 
@@ -85,7 +89,8 @@ namespace Confirm_Address_for_Outlook_2013
 
                 result = f.ShowConfirmAddressDialog(
                     ref internalList,
-                    ref externalList);
+                    ref externalList,
+                    ref mailBody);
                 f.Dispose();
             }
 

@@ -47,7 +47,11 @@
             this.countdownSeconds = new System.Windows.Forms.Label();
             this.CountDownTime = new System.Windows.Forms.NumericUpDown();
             this.configMessage = new System.Windows.Forms.Label();
+            this.ConfirmMailBodyLines = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ConfirmMailBody = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.CountDownTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfirmMailBodyLines)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnAdd
@@ -157,16 +161,38 @@
             // 
             resources.ApplyResources(this.CountDownTime, "CountDownTime");
             this.CountDownTime.Name = "CountDownTime";
+            this.CountDownTime.ValueChanged += new System.EventHandler(this.ValueChangedEvent);
             // 
             // configMessage
             // 
             resources.ApplyResources(this.configMessage, "configMessage");
             this.configMessage.Name = "configMessage";
             // 
+            // ConfirmMailBodyLines
+            // 
+            resources.ApplyResources(this.ConfirmMailBodyLines, "ConfirmMailBodyLines");
+            this.ConfirmMailBodyLines.Name = "ConfirmMailBodyLines";
+            this.ConfirmMailBodyLines.ValueChanged += new System.EventHandler(this.ValueChangedEvent);
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // ConfirmMailBody
+            // 
+            resources.ApplyResources(this.ConfirmMailBody, "ConfirmMailBody");
+            this.ConfirmMailBody.Name = "ConfirmMailBody";
+            this.ConfirmMailBody.UseVisualStyleBackColor = true;
+            this.ConfirmMailBody.Click += new System.EventHandler(this.CheckChangedEvent);
+            // 
             // ConfirmAddressConfig
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.ConfirmMailBodyLines);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ConfirmMailBody);
             this.Controls.Add(this.CountDownTime);
             this.Controls.Add(this.countdownSeconds);
             this.Controls.Add(this.NoDisplayInsiderDomainOnly);
@@ -186,6 +212,7 @@
             this.Controls.Add(this.configMessage);
             this.Name = "ConfirmAddressConfig";
             ((System.ComponentModel.ISupportInitialize)(this.CountDownTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfirmMailBodyLines)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,5 +237,8 @@
         private System.Windows.Forms.Label countdownSeconds;
         private System.Windows.Forms.NumericUpDown CountDownTime;
         private System.Windows.Forms.Label configMessage;
+        private System.Windows.Forms.NumericUpDown ConfirmMailBodyLines;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox ConfirmMailBody;
     }
 }

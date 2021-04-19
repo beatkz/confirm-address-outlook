@@ -50,19 +50,18 @@
             // 
             resources.ApplyResources(this.CountDownMsg2, "CountDownMsg2");
             this.CountDownMsg2.Name = "CountDownMsg2";
-            this.CountDownMsg2.Click += new System.EventHandler(this.CountDownMsg2_Click);
             // 
             // doOK
             // 
-            resources.ApplyResources(this.doOK, "doOK");
             this.doOK.DialogResult = System.Windows.Forms.DialogResult.OK;
+            resources.ApplyResources(this.doOK, "doOK");
             this.doOK.Name = "doOK";
             this.doOK.UseVisualStyleBackColor = true;
             // 
             // doCancel
             // 
-            resources.ApplyResources(this.doCancel, "doCancel");
             this.doCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.doCancel, "doCancel");
             this.doCancel.Name = "doCancel";
             this.doCancel.UseVisualStyleBackColor = true;
             // 

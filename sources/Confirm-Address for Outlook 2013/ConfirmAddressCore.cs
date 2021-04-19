@@ -1,11 +1,37 @@
 ﻿using System.Collections.Generic;
 using Outlook = Microsoft.Office.Interop.Outlook;
 using System.Runtime.InteropServices;
+using System.Linq;
 
 namespace Confirm_Address_for_Outlook_2013
 {
-    class ConfirmAddressCore
+    public class ConfirmAddressCore
     {
+        public string getMailBody(string rawBody, long printLines)
+        {
+            string mailbody = "";
+            string[] del = { "\n" };
+
+            string[] splitedBody = rawBody.Split(del,System.StringSplitOptions.None);
+
+            for (var i=0; i<printLines; i++)
+            {
+                mailbody += splitedBody[i] + "\n";
+            }
+
+            return mailbody;
+        }
+
+        public List<string> getDomainList(string domains)
+        {
+            if (domains == null || domains.Length == 0)
+            {
+                return new List<string> { };
+            } else {
+                return domains.Split(',').ToList();
+            }
+        }
+
         public void CollectMailAddress(
             Outlook.Recipients reci, 
             ref List<string>addressList)

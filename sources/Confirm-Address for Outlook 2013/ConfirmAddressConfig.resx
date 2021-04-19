@@ -117,14 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ConfirmMailBodyLines.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 23</value>
+  </data>
   <data name="&gt;&gt;BtnAdd.Name" xml:space="preserve">
     <value>BtnAdd</value>
   </data>
-  <data name="PortingURLLink.Text" xml:space="preserve">
-    <value>https://github.com/beatkz/confirm-address-outlook</value>
-  </data>
-  <data name="&gt;&gt;colhMyDomain.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="&gt;&gt;MyDomains.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -136,19 +138,20 @@
   <data name="&gt;&gt;configMessage.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="NoDisplayInsiderDomainOnly.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="CountDownTime.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ConfirmMailBody.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
   <data name="credit1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 387</value>
+    <value>15, 429</value>
   </data>
   <data name="OriginalURLLink.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+  <data name="&gt;&gt;ConfirmMailBodyLines.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;PortingURLLink.Parent" xml:space="preserve">
     <value>$this</value>
@@ -156,11 +159,17 @@
   <data name="&gt;&gt;BtnAdd.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;InsiderDomainBatchCheck.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="PortingURLLink.Text" xml:space="preserve">
+    <value>https://github.com/beatkz/confirm-address-outlook</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="NoDisplayInsiderDomainOnly.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ConfirmMailBodyLines.Name" xml:space="preserve">
+    <value>ConfirmMailBodyLines</value>
   </data>
   <data name="AppVersion.Text" xml:space="preserve">
     <value>Version: x.x.x.x</value>
@@ -168,14 +177,17 @@
   <data name="&gt;&gt;OutsiderDomainBatchCheck.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="BtnRemove.Text" xml:space="preserve">
-    <value>&amp;Remove</value>
+  <data name="OutsiderDomainBatchCheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 354</value>
   </data>
   <data name="BtnRemove.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="countdownSeconds.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 15</value>
+  </data>
+  <data name="&gt;&gt;ConfirmMailBody.Name" xml:space="preserve">
+    <value>ConfirmMailBody</value>
   </data>
   <data name="configMessage.Size" type="System.Drawing.Size, System.Drawing">
     <value>171, 15</value>
@@ -198,8 +210,14 @@
   <data name="&gt;&gt;InsiderDomainBatchCheck.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="PortingURLLink.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 15</value>
+  </data>
   <data name="&gt;&gt;CountDownTime.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="NoDisplayInsiderDomainOnly.Size" type="System.Drawing.Size, System.Drawing">
     <value>419, 19</value>
@@ -207,23 +225,35 @@
   <data name="CountDownTime.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 23</value>
   </data>
+  <data name="OutsiderDomainBatchCheck.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MyDomains.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;BtnEdit.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>17</value>
   </data>
   <data name="MyDomains.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 31</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
+  <data name="&gt;&gt;credit2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ConfirmMailBody.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 304</value>
   </data>
   <data name="credit2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 417</value>
+    <value>15, 459</value>
   </data>
   <data name="CountDown.Text" xml:space="preserve">
     <value>Countdown before sending mail:</value>
   </data>
-  <data name="credit1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 15</value>
+  <data name="&gt;&gt;colhMyDomain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
   </data>
   <data name="OriginalURLLink.Text" xml:space="preserve">
     <value>https://github.com/Meatian/confirm-address</value>
@@ -234,6 +264,9 @@
   <data name="&gt;&gt;OriginalURLLink.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="credit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 15</value>
+  </data>
   <data name="&gt;&gt;AddonTitle.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -241,10 +274,16 @@
     <value>Confirm-Address for Outlook</value>
   </data>
   <data name="&gt;&gt;NoDisplayInsiderDomainOnly.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
-  <data name="OutsiderDomainBatchCheck.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;ConfirmMailBody.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ConfirmMailBody.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 24</value>
+  </data>
+  <data name="OutsiderDomainBatchCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 19</value>
   </data>
   <data name="&gt;&gt;OriginalURLLink.Type" xml:space="preserve">
     <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -259,10 +298,7 @@
     <value>11</value>
   </data>
   <data name="AddonTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 351</value>
-  </data>
-  <data name="OutsiderDomainBatchCheck.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 19</value>
+    <value>14, 393</value>
   </data>
   <data name="BtnEdit.Text" xml:space="preserve">
     <value>&amp;Edit</value>
@@ -279,23 +315,26 @@
   <data name="countdownSeconds.Text" xml:space="preserve">
     <value>second(s)</value>
   </data>
+  <data name="&gt;&gt;InsiderDomainBatchCheck.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="OutsiderDomainBatchCheck.Text" xml:space="preserve">
     <value>Enable 'Check all' button for other domains</value>
   </data>
   <data name="OutsiderDomainBatchCheck.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>11</value>
   </data>
   <data name="AddonTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 14.25pt</value>
   </data>
   <data name="CountDownTime.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+    <value>7</value>
   </data>
   <data name="CountDownTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 275</value>
+    <value>276, 275</value>
   </data>
-  <data name="&gt;&gt;CountDownTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 310</value>
   </data>
   <data name="credit2.Text" xml:space="preserve">
     <value>Outlook ported by Keiji Momose</value>
@@ -306,14 +345,17 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ConfirmAddressConfig</value>
   </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
   <data name="&gt;&gt;AppVersion.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="AppVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>308, 359</value>
+    <value>307, 401</value>
   </data>
-  <data name="OutsiderDomainBatchCheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 329</value>
+  <data name="NoDisplayInsiderDomainOnly.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;BtnEdit.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -333,20 +375,23 @@
   <data name="configMessage.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 13</value>
   </data>
-  <data name="&gt;&gt;PortingURLLink.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;ConfirmMailBody.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="BtnEdit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 30</value>
+  <data name="&gt;&gt;PortingURLLink.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="AddonTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="configMessage.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;AddonTitle.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>14</value>
   </data>
   <data name="&gt;&gt;CountDown.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="AddonTitle.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -354,23 +399,23 @@
   <data name="AppVersion.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="OriginalURLLink.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 402</value>
+  <data name="CountDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 279</value>
   </data>
-  <data name="&gt;&gt;colhMyDomain.Name" xml:space="preserve">
-    <value>colhMyDomain</value>
+  <data name="OriginalURLLink.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 444</value>
+  </data>
+  <data name="&gt;&gt;ConfirmMailBodyLines.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;CountDown.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;BtnAdd.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;OutsiderDomainBatchCheck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="credit2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>500, 500</value>
+  <data name="BtnRemove.Text" xml:space="preserve">
+    <value>&amp;Remove</value>
   </data>
   <data name="OriginalURLLink.Size" type="System.Drawing.Size, System.Drawing">
     <value>249, 15</value>
@@ -381,8 +426,8 @@
   <data name="&gt;&gt;BtnRemove.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;InsiderDomainBatchCheck.Name" xml:space="preserve">
-    <value>InsiderDomainBatchCheck</value>
+  <data name="BtnEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 30</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
@@ -394,19 +439,19 @@
     <value>19, 254</value>
   </data>
   <data name="countdownSeconds.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 280</value>
-  </data>
-  <data name="BtnAdd.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>332, 280</value>
   </data>
   <data name="&gt;&gt;CountDown.Name" xml:space="preserve">
     <value>CountDown</value>
   </data>
   <data name="CountDown.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;AppVersion.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;colhMyDomain.Name" xml:space="preserve">
+    <value>colhMyDomain</value>
   </data>
   <data name="&gt;&gt;PortingURLLink.Name" xml:space="preserve">
     <value>PortingURLLink</value>
@@ -414,20 +459,26 @@
   <data name="&gt;&gt;MyDomains.Name" xml:space="preserve">
     <value>MyDomains</value>
   </data>
+  <data name="ConfirmMailBody.Text" xml:space="preserve">
+    <value>Confirm the first few lines of the mail body:</value>
+  </data>
   <data name="&gt;&gt;BtnRemove.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>16</value>
   </data>
   <data name="&gt;&gt;MyDomains.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>15</value>
   </data>
   <data name="AppVersion.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 15</value>
   </data>
-  <data name="&gt;&gt;credit1.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;BtnEdit.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="CountDownTime.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;BtnAdd.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 500</value>
   </data>
   <data name="AddonTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>256, 25</value>
@@ -435,11 +486,8 @@
   <data name="PortingURLLink.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;BtnRemove.Name" xml:space="preserve">
-    <value>BtnRemove</value>
-  </data>
   <data name="InsiderDomainBatchCheck.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;credit2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -447,20 +495,17 @@
   <data name="colhMyDomain.Width" type="System.Int32, mscorlib">
     <value>455</value>
   </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;configMessage.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;countdownSeconds.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;configMessage.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;OutsiderDomainBatchCheck.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;OutsiderDomainBatchCheck.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="CountDown.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -475,7 +520,7 @@
     <value>Don't show confirmation dialog when all recipients are within my domains</value>
   </data>
   <data name="&gt;&gt;AppVersion.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="countdownSeconds.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -484,19 +529,25 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="OriginalURLLink.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>12</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 23</value>
   </data>
   <data name="&gt;&gt;AddonTitle.Name" xml:space="preserve">
     <value>AddonTitle</value>
   </data>
   <data name="PortingURLLink.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 432</value>
+    <value>41, 474</value>
   </data>
   <data name="&gt;&gt;MyDomains.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="MyDomains.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="credit1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
   </data>
   <data name="&gt;&gt;NoDisplayInsiderDomainOnly.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -504,38 +555,50 @@
   <data name="&gt;&gt;BtnEdit.Name" xml:space="preserve">
     <value>BtnEdit</value>
   </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>line(s)</value>
+  </data>
+  <data name="ConfirmMailBodyLines.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 305</value>
+  </data>
   <data name="configMessage.Text" xml:space="preserve">
     <value>Add your group domain name.</value>
   </data>
-  <data name="&gt;&gt;AddonTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="PortingURLLink.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>13</value>
+  </data>
+  <data name="InsiderDomainBatchCheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 329</value>
   </data>
   <data name="&gt;&gt;countdownSeconds.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;BtnEdit.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="BtnAdd.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;OutsiderDomainBatchCheck.Name" xml:space="preserve">
     <value>OutsiderDomainBatchCheck</value>
   </data>
-  <data name="&gt;&gt;credit2.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;PortingURLLink.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnRemove.Name" xml:space="preserve">
+    <value>BtnRemove</value>
   </data>
   <data name="&gt;&gt;InsiderDomainBatchCheck.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="ConfirmMailBodyLines.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
   <data name="&gt;&gt;BtnAdd.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>18</value>
   </data>
   <data name="BtnRemove.Location" type="System.Drawing.Point, System.Drawing">
     <value>375, 218</value>
   </data>
   <data name="&gt;&gt;OriginalURLLink.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
   <data name="&gt;&gt;NoDisplayInsiderDomainOnly.Name" xml:space="preserve">
     <value>NoDisplayInsiderDomainOnly</value>
@@ -544,10 +607,13 @@
     <value>Original by Meatian</value>
   </data>
   <data name="&gt;&gt;credit2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;credit2.Name" xml:space="preserve">
     <value>credit2</value>
+  </data>
+  <data name="&gt;&gt;InsiderDomainBatchCheck.Name" xml:space="preserve">
+    <value>InsiderDomainBatchCheck</value>
   </data>
   <data name="BtnEdit.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -558,23 +624,26 @@
   <data name="&gt;&gt;CountDownTime.Name" xml:space="preserve">
     <value>CountDownTime</value>
   </data>
-  <data name="PortingURLLink.Size" type="System.Drawing.Size, System.Drawing">
-    <value>286, 15</value>
-  </data>
-  <data name="AddonTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;countdownSeconds.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;NoDisplayInsiderDomainOnly.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="CountDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 279</value>
+  <data name="&gt;&gt;CountDownTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PortingURLLink.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ConfirmMailBodyLines.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CountDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 19</value>
+  </data>
+  <data name="credit2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ConfirmMailBody.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="MyDomains.Size" type="System.Drawing.Size, System.Drawing">
     <value>461, 181</value>
@@ -582,8 +651,8 @@
   <data name="InsiderDomainBatchCheck.Size" type="System.Drawing.Size, System.Drawing">
     <value>251, 19</value>
   </data>
-  <data name="credit1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;credit1.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="&gt;&gt;BtnRemove.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -591,8 +660,8 @@
   <data name="&gt;&gt;credit1.Name" xml:space="preserve">
     <value>credit1</value>
   </data>
-  <data name="InsiderDomainBatchCheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 304</value>
+  <data name="&gt;&gt;AddonTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -38,6 +38,7 @@
             this.ExternalMailAddressList = new System.Windows.Forms.ListView();
             this.columnBatchCheckOther = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnOtherMailAddress = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ConfirmMailBody = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // confirm_message
@@ -103,10 +104,17 @@
             // 
             resources.ApplyResources(this.columnOtherMailAddress, "columnOtherMailAddress");
             // 
+            // ConfirmMailBody
+            // 
+            resources.ApplyResources(this.ConfirmMailBody, "ConfirmMailBody");
+            this.ConfirmMailBody.Name = "ConfirmMailBody";
+            this.ConfirmMailBody.UseVisualStyleBackColor = true;
+            // 
             // ConfirmAddressDialog
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.ConfirmMailBody);
             this.Controls.Add(this.ExternalMailAddressList);
             this.Controls.Add(this.InternalMailAddressList);
             this.Controls.Add(this.btn_SendCancel);
@@ -135,5 +143,6 @@
         private System.Windows.Forms.ListView ExternalMailAddressList;
         private System.Windows.Forms.ColumnHeader columnBatchCheckOther;
         private System.Windows.Forms.ColumnHeader columnOtherMailAddress;
+        private System.Windows.Forms.CheckBox ConfirmMailBody;
     }
 }

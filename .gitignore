@@ -1,3 +1,5 @@
 /sources/Confirm-Address for Outlook 2013/bin
 /sources/Confirm-Address for Outlook 2013/obj
 *.pfx
+/sources/CA-Outlook-xUnitTest/bin
+/sources/CA-Outlook-xUnitTest/obj

@@ -8,6 +8,8 @@ namespace Confirm_Address_for_Outlook_2013
     {
         private List<String> internalList = new List<string> { };
         private List<String> externalList = new List<string> { };
+        private string mailBody;
+
         private long fullEmailAddressCount = new long();
         private long fullEmailAddressCheckedCount = new long();
         private bool isInsiderMailAddressAllChecked = false;
@@ -22,17 +24,24 @@ namespace Confirm_Address_for_Outlook_2013
             InitializeComponent();
         }
 
-        public DialogResult ShowConfirmAddressDialog(ref List<string> internalList, ref List<string> externalList)
+        public DialogResult ShowConfirmAddressDialog(
+            ref List<string> internalList, 
+            ref List<string> externalList, 
+            ref string mailBody)
         {
             this.internalList = internalList;
             this.externalList = externalList;
+            this.mailBody = mailBody;
 
             var result = ShowDialog();
 
             return result;
         }
 
-        private void AddListViewItem(ref List<string> wantToAddList, ref ListView willAddListView) {
+        private void AddListViewItem(
+            ref List<string> wantToAddList, 
+            ref ListView willAddListView
+            ) {
             for (int count = 0; count < wantToAddList.Count; count++)
             {
                 ListViewItem item = new ListViewItem();
