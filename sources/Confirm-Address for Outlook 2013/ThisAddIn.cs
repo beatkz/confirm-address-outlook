@@ -43,7 +43,7 @@ namespace Confirm_Address_for_Outlook_2013
             List<string> internalList = new List<string> { };
             List<string> externalList = new List<string> { };
             List<string> addressList = new List<string> { };
-            string mailBody;
+            string mailBody = "";
 
             RegUtil ru = new RegUtil();
             var indomains = ru.LoadRegString("InsiderDomains");

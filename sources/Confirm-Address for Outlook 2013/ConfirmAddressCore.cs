@@ -13,6 +13,11 @@ namespace Confirm_Address_for_Outlook_2013
             string[] del = { "\n" };
 
             string[] splitedBody = rawBody.Split(del,System.StringSplitOptions.None);
+            
+            if(splitedBody.Length < printLines)
+            {
+                printLines = (long)splitedBody.Length;
+            }
 
             for (var i=0; i<printLines; i++)
             {

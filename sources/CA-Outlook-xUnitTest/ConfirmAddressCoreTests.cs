@@ -171,5 +171,18 @@ namespace CA_Outlook_xUnitTest
 
             Assert.Equal("››Š”®‰ïĞ\n~~—l\n\n‚¨¢˜b‚É‚È‚Á‚Ä‚¨‚è‚Ü‚·B\nŠ”®‰ïĞ‚Ì¢¢‚Å‚·B\n", printBody);
         }
+
+        [Fact]
+        public void TestgetMailBodyLessThan5Lines()
+        {
+            string rawBody = "››Š”®‰ïĞ\n~~—l";
+            long printRows = 5;
+
+            ConfirmAddressCore cac = new ConfirmAddressCore();
+            string printBody = cac.getMailBody(rawBody, printRows);
+
+            Assert.Equal("››Š”®‰ïĞ\n~~—l\n", printBody);
+        }
+
     }
 }
