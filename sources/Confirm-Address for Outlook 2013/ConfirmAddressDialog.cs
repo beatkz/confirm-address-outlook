@@ -61,8 +61,7 @@ namespace Confirm_Address_for_Outlook_2013
             bcOutsiderMail = Convert.ToBoolean(ru.LoadRegInt("OutsiderDomainBatchCheck"));
             ExternalMailAddressList.Columns[0].Text = bcOutsiderMail ? "✓" : "";
             isMailBodyConfirm = Convert.ToBoolean(ru.LoadRegInt("ConfirmMailBody"));
-            ConfirmMailBody.Enabled = isMailBodyConfirm;
-            mailBodyBox.Enabled = isMailBodyConfirm;
+            pnlMailBody.Visible = isMailBodyConfirm;
         }
 
         private void ConfirmAddressDialog_Load(object sender, EventArgs e)

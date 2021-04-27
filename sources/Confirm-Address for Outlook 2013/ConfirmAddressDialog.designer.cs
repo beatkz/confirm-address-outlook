@@ -44,7 +44,14 @@
             this.CountDownMsg2 = new System.Windows.Forms.Label();
             this.CountDownMsg1 = new System.Windows.Forms.Label();
             this.counterLabel = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlMailBody = new System.Windows.Forms.Panel();
+            this.AttachedFilenameList = new System.Windows.Forms.ListView();
+            this.columnBatchCheckAttach = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnAttachedFileNames = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CountdownPanel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.pnlMailBody.SuspendLayout();
             this.SuspendLayout();
             // 
             // confirm_message
@@ -61,18 +68,18 @@
             // 
             // btn_SendCancel
             // 
-            resources.ApplyResources(this.btn_SendCancel, "btn_SendCancel");
             this.btn_SendCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.btn_SendCancel, "btn_SendCancel");
             this.btn_SendCancel.Name = "btn_SendCancel";
             this.btn_SendCancel.UseVisualStyleBackColor = true;
             // 
             // InternalMailAddressList
             // 
-            resources.ApplyResources(this.InternalMailAddressList, "InternalMailAddressList");
             this.InternalMailAddressList.CheckBoxes = true;
             this.InternalMailAddressList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnBatchCheckMy,
             this.columnMyMailAddress});
+            resources.ApplyResources(this.InternalMailAddressList, "InternalMailAddressList");
             this.InternalMailAddressList.HideSelection = false;
             this.InternalMailAddressList.Name = "InternalMailAddressList";
             this.InternalMailAddressList.UseCompatibleStateImageBehavior = false;
@@ -90,11 +97,11 @@
             // 
             // ExternalMailAddressList
             // 
-            resources.ApplyResources(this.ExternalMailAddressList, "ExternalMailAddressList");
             this.ExternalMailAddressList.CheckBoxes = true;
             this.ExternalMailAddressList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnBatchCheckOther,
             this.columnOtherMailAddress});
+            resources.ApplyResources(this.ExternalMailAddressList, "ExternalMailAddressList");
             this.ExternalMailAddressList.HideSelection = false;
             this.ExternalMailAddressList.Name = "ExternalMailAddressList";
             this.ExternalMailAddressList.UseCompatibleStateImageBehavior = false;
@@ -121,13 +128,14 @@
             // 
             resources.ApplyResources(this.mailBodyBox, "mailBodyBox");
             this.mailBodyBox.Name = "mailBodyBox";
+            this.mailBodyBox.ReadOnly = true;
             // 
             // CountdownPanel
             // 
-            resources.ApplyResources(this.CountdownPanel, "CountdownPanel");
             this.CountdownPanel.Controls.Add(this.CountDownMsg2);
             this.CountdownPanel.Controls.Add(this.CountDownMsg1);
             this.CountdownPanel.Controls.Add(this.counterLabel);
+            resources.ApplyResources(this.CountdownPanel, "CountdownPanel");
             this.CountdownPanel.Name = "CountdownPanel";
             // 
             // CountDownMsg2
@@ -145,15 +153,48 @@
             resources.ApplyResources(this.counterLabel, "counterLabel");
             this.counterLabel.Name = "counterLabel";
             // 
+            // flowLayoutPanel1
+            // 
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Controls.Add(this.InternalMailAddressList);
+            this.flowLayoutPanel1.Controls.Add(this.ExternalMailAddressList);
+            this.flowLayoutPanel1.Controls.Add(this.pnlMailBody);
+            this.flowLayoutPanel1.Controls.Add(this.AttachedFilenameList);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // pnlMailBody
+            // 
+            this.pnlMailBody.Controls.Add(this.ConfirmMailBody);
+            this.pnlMailBody.Controls.Add(this.mailBodyBox);
+            resources.ApplyResources(this.pnlMailBody, "pnlMailBody");
+            this.pnlMailBody.Name = "pnlMailBody";
+            // 
+            // AttachedFilenameList
+            // 
+            this.AttachedFilenameList.CheckBoxes = true;
+            this.AttachedFilenameList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnBatchCheckAttach,
+            this.columnAttachedFileNames});
+            resources.ApplyResources(this.AttachedFilenameList, "AttachedFilenameList");
+            this.AttachedFilenameList.HideSelection = false;
+            this.AttachedFilenameList.Name = "AttachedFilenameList";
+            this.AttachedFilenameList.UseCompatibleStateImageBehavior = false;
+            this.AttachedFilenameList.View = System.Windows.Forms.View.Details;
+            // 
+            // columnBatchCheckAttach
+            // 
+            resources.ApplyResources(this.columnBatchCheckAttach, "columnBatchCheckAttach");
+            // 
+            // columnAttachedFileNames
+            // 
+            resources.ApplyResources(this.columnAttachedFileNames, "columnAttachedFileNames");
+            // 
             // ConfirmAddressDialog
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.CountdownPanel);
-            this.Controls.Add(this.mailBodyBox);
-            this.Controls.Add(this.ConfirmMailBody);
-            this.Controls.Add(this.ExternalMailAddressList);
-            this.Controls.Add(this.InternalMailAddressList);
             this.Controls.Add(this.btn_SendCancel);
             this.Controls.Add(this.btn_DoSend);
             this.Controls.Add(this.confirm_message);
@@ -166,6 +207,9 @@
             this.Load += new System.EventHandler(this.ConfirmAddressDialog_Load);
             this.CountdownPanel.ResumeLayout(false);
             this.CountdownPanel.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.pnlMailBody.ResumeLayout(false);
+            this.pnlMailBody.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +232,10 @@
         private System.Windows.Forms.Label CountDownMsg2;
         private System.Windows.Forms.Label CountDownMsg1;
         private System.Windows.Forms.Label counterLabel;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel pnlMailBody;
+        private System.Windows.Forms.ListView AttachedFilenameList;
+        private System.Windows.Forms.ColumnHeader columnBatchCheckAttach;
+        private System.Windows.Forms.ColumnHeader columnAttachedFileNames;
     }
 }
