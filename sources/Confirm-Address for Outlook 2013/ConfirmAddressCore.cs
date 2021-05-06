@@ -158,6 +158,15 @@ namespace Confirm_Address_for_Outlook_2013
             }
         }
 
+        public void CollectAttachments(
+            Outlook.Attachments att,
+            ref List<string> attList)
+        {
+            foreach (Outlook.Attachment item in att)
+            {
+                attList.Add(item.FileName);
+            }
+        }
         private static string LowerCasedDomainfromDomainList(
             List<string> domainList,
             int j){

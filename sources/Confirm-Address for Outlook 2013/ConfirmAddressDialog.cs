@@ -8,6 +8,7 @@ namespace Confirm_Address_for_Outlook_2013
     {
         private List<String> internalList = new List<string> { };
         private List<String> externalList = new List<string> { };
+        private List<String> attachList = new List<string> { };
         private string mailBody;
 
         private bool isInsiderMailAddressAllChecked = false;
@@ -28,11 +29,13 @@ namespace Confirm_Address_for_Outlook_2013
 
         public DialogResult ShowConfirmAddressDialog(
             ref List<string> internalList, 
-            ref List<string> externalList, 
+            ref List<string> externalList,
+            ref List<string> attachList,
             ref string mailBody)
         {
             this.internalList = internalList;
             this.externalList = externalList;
+            this.attachList = attachList;
             this.mailBody = mailBody;
 
             var result = ShowDialog();
@@ -60,6 +63,7 @@ namespace Confirm_Address_for_Outlook_2013
             InternalMailAddressList.Columns[0].Text = bcInsiderMail ? "✓" : "";
             bcOutsiderMail = Convert.ToBoolean(ru.LoadRegInt("OutsiderDomainBatchCheck"));
             ExternalMailAddressList.Columns[0].Text = bcOutsiderMail ? "✓" : "";
+            AttachmentList.Columns[0].Text = "";
             isMailBodyConfirm = Convert.ToBoolean(ru.LoadRegInt("ConfirmMailBody"));
             pnlMailBody.Visible = isMailBodyConfirm;
         }
@@ -69,6 +73,11 @@ namespace Confirm_Address_for_Outlook_2013
             SettingsfromRegistrySettings();
             AddListViewItem(ref internalList, ref InternalMailAddressList);
             AddListViewItem(ref externalList, ref ExternalMailAddressList);
+            if(attachList.Count >= 1)
+            {
+                AddListViewItem(ref attachList, ref AttachmentList);
+                pnlAttach.Visible = true;
+            }
             mailBodyBox.Text = isMailBodyConfirm ? mailBody : "";
         }
 
@@ -95,6 +104,7 @@ namespace Confirm_Address_for_Outlook_2013
         {
             var internalConfirmed = true;
             var externalConfirmed = true;
+            var attachFileConfirmed = true;
             var mailHeadConfirmed = true;
 
             var id_checkboxes = InternalMailAddressList.Items;
@@ -121,12 +131,24 @@ namespace Confirm_Address_for_Outlook_2013
                 }
             }
 
+            var atf_checkboxes = AttachmentList.Items;
+            if (atf_checkboxes.Count > 0)
+            {
+                for (var i = 0; i < atf_checkboxes.Count; i++)
+                {
+                    if (!atf_checkboxes[i].Checked)
+                    {
+                        attachFileConfirmed = false;
+                    }
+                }
+            }
+
             if (isMailBodyConfirm)
             {
                 mailHeadConfirmed = ConfirmMailBody.Checked;
             }
 
-            btn_DoSend.Enabled = internalConfirmed && externalConfirmed && mailHeadConfirmed;
+            btn_DoSend.Enabled = internalConfirmed && externalConfirmed && attachFileConfirmed && mailHeadConfirmed;
         }
 
         private void MailAddressList_ColumnClick(object sender, ColumnClickEventArgs e)
