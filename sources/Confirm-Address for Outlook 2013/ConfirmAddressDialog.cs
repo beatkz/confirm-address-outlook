@@ -13,9 +13,11 @@ namespace Confirm_Address_for_Outlook_2013
 
         private bool isInsiderMailAddressAllChecked = false;
         private bool isOutsiderMailAddressAllChecked = false;
+        private bool isAttachmentFilesAllChecked = false;
 
         private bool bcInsiderMail;
         private bool bcOutsiderMail;
+        private bool bcAttachment;
         private bool isMailBodyConfirm;
 
         private int limit;
@@ -63,7 +65,9 @@ namespace Confirm_Address_for_Outlook_2013
             InternalMailAddressList.Columns[0].Text = bcInsiderMail ? "✓" : "";
             bcOutsiderMail = Convert.ToBoolean(ru.LoadRegInt("OutsiderDomainBatchCheck"));
             ExternalMailAddressList.Columns[0].Text = bcOutsiderMail ? "✓" : "";
-            AttachmentList.Columns[0].Text = "";
+            bcAttachment = Convert.ToBoolean(ru.LoadRegInt("AttachmentBatchCheck"));
+            AttachmentList.Columns[0].Text = bcAttachment ? "✓" : "";
+
             isMailBodyConfirm = Convert.ToBoolean(ru.LoadRegInt("ConfirmMailBody"));
             pnlMailBody.Visible = isMailBodyConfirm;
         }
@@ -172,7 +176,14 @@ namespace Confirm_Address_for_Outlook_2013
                         ExternalMailAddressList.Items[i].Checked = isOutsiderMailAddressAllChecked;
                     }
                 }
-                
+                else if (((ListView)sender).Name == "AttachmentList" && bcAttachment)
+                {
+                    isAttachmentFilesAllChecked = !isAttachmentFilesAllChecked;
+                    for (int i = 0; i < AttachmentList.Items.Count; i++)
+                    {
+                        AttachmentList.Items[i].Checked = isAttachmentFilesAllChecked;
+                    }
+                }
             }
         }
 

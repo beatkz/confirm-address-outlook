@@ -117,598 +117,529 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="confirm_message.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="confirm_message.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="confirm_message.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 9</value>
-  </data>
-  <data name="confirm_message.Size" type="System.Drawing.Size, System.Drawing">
-    <value>331, 21</value>
-  </data>
-  <data name="confirm_message.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="confirm_message.Text" xml:space="preserve">
-    <value>Please confirm the following e-mail addresses:</value>
-  </data>
-  <data name="&gt;&gt;confirm_message.Name" xml:space="preserve">
-    <value>confirm_message</value>
-  </data>
-  <data name="&gt;&gt;confirm_message.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;confirm_message.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;confirm_message.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btn_DoSend.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btn_DoSend.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="btn_DoSend.Location" type="System.Drawing.Point, System.Drawing">
-    <value>294, 288</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_DoSend.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="btn_DoSend.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 35</value>
-  </data>
-  <data name="btn_DoSend.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="btn_DoSend.Text" xml:space="preserve">
-    <value>Send</value>
-  </data>
-  <data name="&gt;&gt;btn_DoSend.Name" xml:space="preserve">
-    <value>btn_DoSend</value>
-  </data>
-  <data name="&gt;&gt;btn_DoSend.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_DoSend.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_DoSend.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btn_SendCancel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="btn_SendCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_SendCancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>382, 288</value>
-  </data>
-  <data name="btn_SendCancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="btn_SendCancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 35</value>
-  </data>
-  <data name="btn_SendCancel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="btn_SendCancel.Text" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="&gt;&gt;btn_SendCancel.Name" xml:space="preserve">
-    <value>btn_SendCancel</value>
-  </data>
-  <data name="&gt;&gt;btn_SendCancel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_SendCancel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_SendCancel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="InternalMailAddressList.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="InternalMailAddressList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="InternalMailAddressList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 80</value>
-  </data>
-  <data name="InternalMailAddressList.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;InternalMailAddressList.Name" xml:space="preserve">
-    <value>InternalMailAddressList</value>
-  </data>
-  <data name="&gt;&gt;InternalMailAddressList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;InternalMailAddressList.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;InternalMailAddressList.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="columnBatchCheckMy.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="columnBatchCheckMy.Width" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="columnMyMailAddress.Text" xml:space="preserve">
-    <value>Your domain addresses</value>
-  </data>
-  <data name="columnMyMailAddress.Width" type="System.Int32, mscorlib">
-    <value>360</value>
-  </data>
-  <data name="ExternalMailAddressList.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="ExternalMailAddressList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 89</value>
-  </data>
-  <data name="ExternalMailAddressList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 80</value>
-  </data>
-  <data name="ExternalMailAddressList.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;ExternalMailAddressList.Name" xml:space="preserve">
-    <value>ExternalMailAddressList</value>
-  </data>
-  <data name="&gt;&gt;ExternalMailAddressList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ExternalMailAddressList.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;ExternalMailAddressList.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="columnBatchCheckOther.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="columnBatchCheckOther.Width" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="columnOtherMailAddress.Text" xml:space="preserve">
-    <value>Other domain addresses</value>
-  </data>
-  <data name="columnOtherMailAddress.Width" type="System.Int32, mscorlib">
-    <value>360</value>
-  </data>
-  <data name="ConfirmMailBody.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ConfirmMailBody.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 6</value>
-  </data>
-  <data name="ConfirmMailBody.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 19</value>
-  </data>
-  <data name="ConfirmMailBody.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="ConfirmMailBody.Text" xml:space="preserve">
-    <value>The first few lines of the mail body</value>
-  </data>
-  <data name="&gt;&gt;ConfirmMailBody.Name" xml:space="preserve">
-    <value>ConfirmMailBody</value>
-  </data>
   <data name="&gt;&gt;ConfirmMailBody.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ConfirmMailBody.Parent" xml:space="preserve">
-    <value>pnlMailBody</value>
-  </data>
-  <data name="&gt;&gt;ConfirmMailBody.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="mailBodyBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 30</value>
-  </data>
-  <data name="mailBodyBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mailBodyBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>415, 80</value>
-  </data>
-  <data name="mailBodyBox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;mailBodyBox.Name" xml:space="preserve">
-    <value>mailBodyBox</value>
-  </data>
-  <data name="&gt;&gt;mailBodyBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mailBodyBox.Parent" xml:space="preserve">
-    <value>pnlMailBody</value>
-  </data>
-  <data name="&gt;&gt;mailBodyBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;CountDownMsg2.Name" xml:space="preserve">
-    <value>CountDownMsg2</value>
-  </data>
-  <data name="&gt;&gt;CountDownMsg2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CountDownMsg2.Parent" xml:space="preserve">
-    <value>CountdownPanel</value>
-  </data>
-  <data name="&gt;&gt;CountDownMsg2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;CountDownMsg1.Name" xml:space="preserve">
-    <value>CountDownMsg1</value>
-  </data>
-  <data name="&gt;&gt;CountDownMsg1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CountDownMsg1.Parent" xml:space="preserve">
-    <value>CountdownPanel</value>
-  </data>
-  <data name="&gt;&gt;CountDownMsg1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;counterLabel.Name" xml:space="preserve">
-    <value>counterLabel</value>
-  </data>
-  <data name="&gt;&gt;counterLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;counterLabel.Parent" xml:space="preserve">
-    <value>CountdownPanel</value>
-  </data>
-  <data name="&gt;&gt;counterLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="CountdownPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 289</value>
-  </data>
-  <data name="CountdownPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>257, 34</value>
-  </data>
-  <data name="CountdownPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="CountdownPanel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;CountdownPanel.Name" xml:space="preserve">
-    <value>CountdownPanel</value>
-  </data>
-  <data name="&gt;&gt;CountdownPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CountdownPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CountdownPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="CountDownMsg2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CountDownMsg2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="CountDownMsg2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CountDownMsg2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 4</value>
-  </data>
-  <data name="CountDownMsg2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 21</value>
-  </data>
-  <data name="CountDownMsg2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="CountDownMsg2.Text" xml:space="preserve">
-    <value>second(s)</value>
-  </data>
-  <data name="CountDownMsg2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;CountDownMsg2.Name" xml:space="preserve">
-    <value>CountDownMsg2</value>
-  </data>
-  <data name="&gt;&gt;CountDownMsg2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CountDownMsg2.Parent" xml:space="preserve">
-    <value>CountdownPanel</value>
-  </data>
-  <data name="&gt;&gt;CountDownMsg2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="CountDownMsg1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="CountDownMsg1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="CountDownMsg1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="CountDownMsg1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 4</value>
   </data>
-  <data name="CountDownMsg1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 21</value>
+  <data name="confirm_message.Size" type="System.Drawing.Size, System.Drawing">
+    <value>331, 21</value>
   </data>
-  <data name="CountDownMsg1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="CountDownMsg1.Text" xml:space="preserve">
-    <value>Countdown...</value>
-  </data>
-  <data name="CountDownMsg1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;CountDownMsg1.Name" xml:space="preserve">
-    <value>CountDownMsg1</value>
-  </data>
-  <data name="&gt;&gt;CountDownMsg1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CountDownMsg1.Parent" xml:space="preserve">
-    <value>CountdownPanel</value>
-  </data>
-  <data name="&gt;&gt;CountDownMsg1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="counterLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="counterLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="counterLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="counterLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 4</value>
-  </data>
-  <data name="counterLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 21</value>
-  </data>
-  <data name="counterLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="counterLabel.Text" xml:space="preserve">
-    <value>100</value>
-  </data>
-  <data name="counterLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;counterLabel.Name" xml:space="preserve">
-    <value>counterLabel</value>
-  </data>
-  <data name="&gt;&gt;counterLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;counterLabel.Parent" xml:space="preserve">
-    <value>CountdownPanel</value>
-  </data>
-  <data name="&gt;&gt;counterLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="flowLayoutPanel1.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;pnlAttach.Name" xml:space="preserve">
-    <value>pnlAttach</value>
-  </data>
-  <data name="&gt;&gt;pnlAttach.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlAttach.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;pnlAttach.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pnlMailBody.Name" xml:space="preserve">
-    <value>pnlMailBody</value>
-  </data>
-  <data name="&gt;&gt;pnlMailBody.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlMailBody.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;pnlMailBody.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 33</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ConfirmMailBody.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>450, 248</value>
   </data>
-  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="&gt;&gt;CountdownPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+  <data name="&gt;&gt;mailBodyBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="InternalMailAddressList.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;AttachmentList.Name" xml:space="preserve">
-    <value>AttachmentList</value>
-  </data>
-  <data name="&gt;&gt;AttachmentList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AttachmentList.Parent" xml:space="preserve">
-    <value>pnlAttach</value>
-  </data>
-  <data name="&gt;&gt;AttachmentList.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pnlAttach.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 175</value>
-  </data>
-  <data name="pnlAttach.Size" type="System.Drawing.Size, System.Drawing">
-    <value>420, 88</value>
-  </data>
-  <data name="pnlAttach.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="pnlAttach.Visible" type="System.Boolean, mscorlib">
+  <data name="btn_DoSend.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;pnlAttach.Name" xml:space="preserve">
-    <value>pnlAttach</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
   </data>
-  <data name="&gt;&gt;pnlAttach.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ExternalMailAddressList.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;pnlAttach.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;pnlAttach.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="AttachmentList.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="AttachmentList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 3</value>
-  </data>
-  <data name="AttachmentList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 80</value>
-  </data>
-  <data name="AttachmentList.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;AttachmentList.Name" xml:space="preserve">
-    <value>AttachmentList</value>
-  </data>
-  <data name="&gt;&gt;AttachmentList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AttachmentList.Parent" xml:space="preserve">
-    <value>pnlAttach</value>
-  </data>
-  <data name="&gt;&gt;AttachmentList.ZOrder" xml:space="preserve">
+  <data name="confirm_message.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="columnBatchCheckAttach.Width" type="System.Int32, mscorlib">
-    <value>24</value>
+  <data name="btn_DoSend.Text" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="&gt;&gt;columnMyMailAddress.Name" xml:space="preserve">
+    <value>columnMyMailAddress</value>
   </data>
   <data name="columnAttachedFileName.Text" xml:space="preserve">
     <value>Attached file name</value>
   </data>
-  <data name="columnAttachedFileName.Width" type="System.Int32, mscorlib">
+  <data name="pnlAttach.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;ConfirmMailBody.Name" xml:space="preserve">
+    <value>ConfirmMailBody</value>
+  </data>
+  <data name="confirm_message.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="columnBatchCheckAttach.Width" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="btn_SendCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;CountDownMsg1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;counterLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CountDownMsg1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="pnlMailBody.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 99</value>
+  </data>
+  <data name="InternalMailAddressList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>418, 80</value>
+  </data>
+  <data name="confirm_message.Text" xml:space="preserve">
+    <value>Please confirm the following e-mail addresses:</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;pnlMailBody.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="columnBatchCheckMy.Width" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Confirm e-mail addresses</value>
+  </data>
+  <data name="&gt;&gt;CountDownMsg1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CountDownMsg2.Name" xml:space="preserve">
+    <value>CountDownMsg2</value>
+  </data>
+  <data name="mailBodyBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 30</value>
+  </data>
+  <data name="CountDownMsg1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;AttachmentList.Name" xml:space="preserve">
+    <value>AttachmentList</value>
+  </data>
+  <data name="columnOtherMailAddress.Width" type="System.Int32, mscorlib">
+    <value>360</value>
+  </data>
+  <data name="&gt;&gt;columnAttachedFileName.Name" xml:space="preserve">
+    <value>columnAttachedFileName</value>
+  </data>
+  <data name="CountdownPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;InternalMailAddressList.Name" xml:space="preserve">
+    <value>InternalMailAddressList</value>
+  </data>
+  <data name="ConfirmMailBody.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 6</value>
+  </data>
+  <data name="columnBatchCheckOther.Width" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="InternalMailAddressList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;counterLabel.Name" xml:space="preserve">
+    <value>counterLabel</value>
+  </data>
+  <data name="CountDownMsg2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 21</value>
+  </data>
+  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="CountdownPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 34</value>
+  </data>
+  <data name="&gt;&gt;pnlAttach.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;confirm_message.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="columnBatchCheckAttach.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ConfirmMailBody.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 19</value>
+  </data>
+  <data name="&gt;&gt;btn_DoSend.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CountDownMsg1.Parent" xml:space="preserve">
+    <value>CountdownPanel</value>
+  </data>
+  <data name="InternalMailAddressList.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="counterLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="btn_DoSend.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="CountDownMsg2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="CountDownMsg1.Text" xml:space="preserve">
+    <value>Countdown...</value>
+  </data>
+  <data name="btn_SendCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 35</value>
+  </data>
+  <data name="pnlMailBody.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="AttachmentList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>418, 80</value>
+  </data>
+  <data name="btn_DoSend.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 288</value>
+  </data>
+  <data name="columnBatchCheckMy.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;columnAttachedFileName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btn_SendCancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 33</value>
+  </data>
+  <data name="CountDownMsg2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 4</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ConfirmAddressDialog</value>
+  </data>
+  <data name="&gt;&gt;AttachmentList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="columnMyMailAddress.Width" type="System.Int32, mscorlib">
     <value>360</value>
   </data>
   <data name="pnlMailBody.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 269</value>
   </data>
-  <data name="pnlMailBody.Size" type="System.Drawing.Size, System.Drawing">
-    <value>420, 99</value>
+  <data name="ExternalMailAddressList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>418, 80</value>
   </data>
-  <data name="pnlMailBody.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="ExternalMailAddressList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 89</value>
   </data>
-  <data name="&gt;&gt;pnlMailBody.Name" xml:space="preserve">
+  <data name="&gt;&gt;ConfirmMailBody.Parent" xml:space="preserve">
     <value>pnlMailBody</value>
   </data>
-  <data name="&gt;&gt;pnlMailBody.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlMailBody.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;pnlMailBody.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ja</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="mailBodyBox.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>484, 336</value>
+  <data name="btn_SendCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>382, 288</value>
   </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+  <data name="&gt;&gt;counterLabel.Parent" xml:space="preserve">
+    <value>CountdownPanel</value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 5, 3, 5</value>
+  <data name="&gt;&gt;CountDownMsg2.Parent" xml:space="preserve">
+    <value>CountdownPanel</value>
+  </data>
+  <data name="pnlAttach.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 88</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Confirm e-mail addresses</value>
-  </data>
-  <data name="&gt;&gt;columnBatchCheckMy.Name" xml:space="preserve">
-    <value>columnBatchCheckMy</value>
-  </data>
-  <data name="&gt;&gt;columnBatchCheckMy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;columnMyMailAddress.Name" xml:space="preserve">
-    <value>columnMyMailAddress</value>
+  <data name="pnlAttach.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;columnMyMailAddress.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;columnBatchCheckOther.Name" xml:space="preserve">
-    <value>columnBatchCheckOther</value>
+  <data name="&gt;&gt;ExternalMailAddressList.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;columnBatchCheckOther.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;columnOtherMailAddress.Name" xml:space="preserve">
-    <value>columnOtherMailAddress</value>
-  </data>
-  <data name="&gt;&gt;columnOtherMailAddress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;columnBatchCheckAttach.Name" xml:space="preserve">
-    <value>columnBatchCheckAttach</value>
+  <data name="&gt;&gt;mailBodyBox.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;columnBatchCheckAttach.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;columnAttachedFileName.Name" xml:space="preserve">
-    <value>columnAttachedFileName</value>
+  <data name="AttachmentList.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
-  <data name="&gt;&gt;columnAttachedFileName.Type" xml:space="preserve">
+  <data name="btn_SendCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CountDownMsg2.Text" xml:space="preserve">
+    <value>second(s)</value>
+  </data>
+  <data name="&gt;&gt;columnBatchCheckOther.Name" xml:space="preserve">
+    <value>columnBatchCheckOther</value>
+  </data>
+  <data name="btn_DoSend.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 35</value>
+  </data>
+  <data name="mailBodyBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;InternalMailAddressList.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_DoSend.Name" xml:space="preserve">
+    <value>btn_DoSend</value>
+  </data>
+  <data name="&gt;&gt;btn_SendCancel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CountDownMsg1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="confirm_message.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="counterLabel.Text" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;ExternalMailAddressList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CountdownPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AttachmentList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 3</value>
+  </data>
+  <data name="ConfirmMailBody.Text" xml:space="preserve">
+    <value>The first few lines of the mail body</value>
+  </data>
+  <data name="&gt;&gt;columnOtherMailAddress.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ConfirmAddressDialog</value>
+  <data name="&gt;&gt;columnBatchCheckMy.Name" xml:space="preserve">
+    <value>columnBatchCheckMy</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="confirm_message.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 9</value>
+  </data>
+  <data name="pnlAttach.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 175</value>
+  </data>
+  <data name="counterLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;CountDownMsg1.Name" xml:space="preserve">
+    <value>CountDownMsg1</value>
+  </data>
+  <data name="&gt;&gt;pnlMailBody.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CountdownPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_SendCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="columnOtherMailAddress.Text" xml:space="preserve">
+    <value>Other domain addresses</value>
+  </data>
+  <data name="CountDownMsg2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;btn_SendCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CountDownMsg1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;mailBodyBox.Name" xml:space="preserve">
+    <value>mailBodyBox</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;confirm_message.Name" xml:space="preserve">
+    <value>confirm_message</value>
+  </data>
+  <data name="AttachmentList.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;ExternalMailAddressList.Name" xml:space="preserve">
+    <value>ExternalMailAddressList</value>
+  </data>
+  <data name="CountDownMsg2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mailBodyBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 80</value>
+  </data>
+  <data name="ConfirmMailBody.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;pnlAttach.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CountDownMsg2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CountDownMsg2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;columnOtherMailAddress.Name" xml:space="preserve">
+    <value>columnOtherMailAddress</value>
+  </data>
+  <data name="ExternalMailAddressList.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;columnBatchCheckAttach.Name" xml:space="preserve">
+    <value>columnBatchCheckAttach</value>
+  </data>
+  <data name="counterLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 4</value>
+  </data>
+  <data name="CountdownPanel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;InternalMailAddressList.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;confirm_message.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;InternalMailAddressList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnBatchCheckMy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CountDownMsg2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="counterLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;pnlAttach.Name" xml:space="preserve">
+    <value>pnlAttach</value>
+  </data>
+  <data name="&gt;&gt;pnlAttach.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;AttachmentList.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;columnBatchCheckOther.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;counterLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ExternalMailAddressList.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_SendCancel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btn_SendCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>484, 336</value>
+  </data>
+  <data name="&gt;&gt;pnlMailBody.Name" xml:space="preserve">
+    <value>pnlMailBody</value>
+  </data>
+  <data name="&gt;&gt;btn_DoSend.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AttachmentList.Parent" xml:space="preserve">
+    <value>pnlAttach</value>
+  </data>
+  <data name="&gt;&gt;pnlMailBody.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="columnBatchCheckOther.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btn_DoSend.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;CountdownPanel.Name" xml:space="preserve">
+    <value>CountdownPanel</value>
+  </data>
+  <data name="&gt;&gt;mailBodyBox.Parent" xml:space="preserve">
+    <value>pnlMailBody</value>
+  </data>
+  <data name="counterLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 21</value>
+  </data>
+  <data name="CountDownMsg1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="flowLayoutPanel1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btn_DoSend.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;btn_DoSend.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CountdownPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 289</value>
+  </data>
+  <data name="counterLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="columnAttachedFileName.Width" type="System.Int32, mscorlib">
+    <value>360</value>
+  </data>
+  <data name="columnMyMailAddress.Text" xml:space="preserve">
+    <value>Your domain addresses</value>
+  </data>
+  <data name="&gt;&gt;ConfirmMailBody.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_SendCancel.Name" xml:space="preserve">
+    <value>btn_SendCancel</value>
+  </data>
+  <data name="CountDownMsg2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;confirm_message.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="counterLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ja</value>
+  </metadata>
 </root>

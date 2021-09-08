@@ -95,6 +95,9 @@ namespace Confirm_Address_for_Outlook_2013
             var isOutsiderDomainBatchCheck = ru.LoadRegInt("OutsiderDomainBatchCheck");
             OutsiderDomainBatchCheck.Checked = Convert.ToBoolean(isOutsiderDomainBatchCheck);
 
+            // 添付ファイル名一括チェックボタン
+            var isAttachmentBatchCheck = ru.LoadRegInt("AttachmentBatchCheck");
+            AttachmentBatchCheck.Checked = Convert.ToBoolean(isAttachmentBatchCheck);
         }
 
         public void GetPageInfo(ref string HelpFile, ref int HelpContext)
@@ -154,6 +157,12 @@ namespace Confirm_Address_for_Outlook_2013
                 regPath, "OutsiderDomainBatchCheck",
                 OutsiderDomainBatchCheck.Checked,
                 Microsoft.Win32.RegistryValueKind.DWord);
+
+            Microsoft.Win32.Registry.SetValue(
+                regPath, "AttachmentBatchCheck",
+                AttachmentBatchCheck.Checked,
+                Microsoft.Win32.RegistryValueKind.DWord);
+
         }
 
         bool isUpdate = false;
@@ -193,7 +202,9 @@ namespace Confirm_Address_for_Outlook_2013
                 {ru.LoadRegInt("InsiderDomainBatchCheck"),
                     Convert.ToInt32(InsiderDomainBatchCheck.Checked)},
                 {ru.LoadRegInt("OutsiderDomainBatchCheck"),
-                    Convert.ToInt32(OutsiderDomainBatchCheck.Checked)}
+                    Convert.ToInt32(OutsiderDomainBatchCheck.Checked)},
+                {ru.LoadRegInt("AttachmentBatchCheck"),
+                    Convert.ToInt32(AttachmentBatchCheck.Checked)}
             };
 
             int iLen = settings.GetLength(0);

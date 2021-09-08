@@ -188,7 +188,7 @@
     <value>自ドメイン宛てのメール送信時は確認ダイアログを表示しない</value>
   </data>
   <data name="countdownSeconds.Location" type="System.Drawing.Point, System.Drawing">
-    <value>333, 280</value>
+    <value>333, 229</value>
   </data>
   <data name="countdownSeconds.Size" type="System.Drawing.Size, System.Drawing">
     <value>19, 15</value>
@@ -217,13 +217,25 @@
     <value>行</value>
   </data>
   <data name="ConfirmMailBody.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 303</value>
+    <value>19, 252</value>
   </data>
   <data name="ConfirmMailBody.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 24</value>
   </data>
   <data name="ConfirmMailBody.Text" xml:space="preserve">
     <value>本文の冒頭行を表示する：</value>
+  </data>
+  <data name="AttachmentBatchCheck.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AttachmentBatchCheck.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="AttachmentBatchCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 19</value>
+  </data>
+  <data name="AttachmentBatchCheck.Text" xml:space="preserve">
+    <value>添付ファイル名の一括チェックボタンを有効にする</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Meiryo UI, 9pt</value>

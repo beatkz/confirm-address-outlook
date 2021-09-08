@@ -50,6 +50,7 @@
             this.ConfirmMailBodyLines = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.ConfirmMailBody = new System.Windows.Forms.CheckBox();
+            this.AttachmentBatchCheck = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.CountDownTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConfirmMailBodyLines)).BeginInit();
             this.SuspendLayout();
@@ -186,10 +187,18 @@
             this.ConfirmMailBody.UseVisualStyleBackColor = true;
             this.ConfirmMailBody.Click += new System.EventHandler(this.CheckChangedEvent);
             // 
+            // AttachmentBatchCheck
+            // 
+            resources.ApplyResources(this.AttachmentBatchCheck, "AttachmentBatchCheck");
+            this.AttachmentBatchCheck.Name = "AttachmentBatchCheck";
+            this.AttachmentBatchCheck.UseVisualStyleBackColor = true;
+            this.AttachmentBatchCheck.Click += new System.EventHandler(this.CheckChangedEvent);
+            // 
             // ConfirmAddressConfig
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.AttachmentBatchCheck);
             this.Controls.Add(this.ConfirmMailBodyLines);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ConfirmMailBody);
@@ -240,5 +249,6 @@
         private System.Windows.Forms.NumericUpDown ConfirmMailBodyLines;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox ConfirmMailBody;
+        private System.Windows.Forms.CheckBox AttachmentBatchCheck;
     }
 }

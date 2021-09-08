@@ -70,18 +70,18 @@
             // 
             // btn_SendCancel
             // 
-            this.btn_SendCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btn_SendCancel, "btn_SendCancel");
+            this.btn_SendCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_SendCancel.Name = "btn_SendCancel";
             this.btn_SendCancel.UseVisualStyleBackColor = true;
             // 
             // InternalMailAddressList
             // 
+            resources.ApplyResources(this.InternalMailAddressList, "InternalMailAddressList");
             this.InternalMailAddressList.CheckBoxes = true;
             this.InternalMailAddressList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnBatchCheckMy,
             this.columnMyMailAddress});
-            resources.ApplyResources(this.InternalMailAddressList, "InternalMailAddressList");
             this.InternalMailAddressList.HideSelection = false;
             this.InternalMailAddressList.Name = "InternalMailAddressList";
             this.InternalMailAddressList.UseCompatibleStateImageBehavior = false;
@@ -99,11 +99,11 @@
             // 
             // ExternalMailAddressList
             // 
+            resources.ApplyResources(this.ExternalMailAddressList, "ExternalMailAddressList");
             this.ExternalMailAddressList.CheckBoxes = true;
             this.ExternalMailAddressList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnBatchCheckOther,
             this.columnOtherMailAddress});
-            resources.ApplyResources(this.ExternalMailAddressList, "ExternalMailAddressList");
             this.ExternalMailAddressList.HideSelection = false;
             this.ExternalMailAddressList.Name = "ExternalMailAddressList";
             this.ExternalMailAddressList.UseCompatibleStateImageBehavior = false;
@@ -134,10 +134,10 @@
             // 
             // CountdownPanel
             // 
+            resources.ApplyResources(this.CountdownPanel, "CountdownPanel");
             this.CountdownPanel.Controls.Add(this.CountDownMsg2);
             this.CountdownPanel.Controls.Add(this.CountDownMsg1);
             this.CountdownPanel.Controls.Add(this.counterLabel);
-            resources.ApplyResources(this.CountdownPanel, "CountdownPanel");
             this.CountdownPanel.Name = "CountdownPanel";
             // 
             // CountDownMsg2
@@ -166,21 +166,23 @@
             // 
             // pnlAttach
             // 
-            this.pnlAttach.Controls.Add(this.AttachmentList);
             resources.ApplyResources(this.pnlAttach, "pnlAttach");
+            this.pnlAttach.Controls.Add(this.AttachmentList);
             this.pnlAttach.Name = "pnlAttach";
             // 
             // AttachmentList
             // 
+            resources.ApplyResources(this.AttachmentList, "AttachmentList");
             this.AttachmentList.CheckBoxes = true;
             this.AttachmentList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnBatchCheckAttach,
             this.columnAttachedFileName});
-            resources.ApplyResources(this.AttachmentList, "AttachmentList");
             this.AttachmentList.HideSelection = false;
             this.AttachmentList.Name = "AttachmentList";
             this.AttachmentList.UseCompatibleStateImageBehavior = false;
             this.AttachmentList.View = System.Windows.Forms.View.Details;
+            this.AttachmentList.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.MailAddressList_ColumnClick);
+            this.AttachmentList.ItemChecked += new System.Windows.Forms.ItemCheckedEventHandler(this.MailAddressList_ItemChecked);
             // 
             // columnBatchCheckAttach
             // 
@@ -192,9 +194,9 @@
             // 
             // pnlMailBody
             // 
+            resources.ApplyResources(this.pnlMailBody, "pnlMailBody");
             this.pnlMailBody.Controls.Add(this.ConfirmMailBody);
             this.pnlMailBody.Controls.Add(this.mailBodyBox);
-            resources.ApplyResources(this.pnlMailBody, "pnlMailBody");
             this.pnlMailBody.Name = "pnlMailBody";
             // 
             // ConfirmAddressDialog

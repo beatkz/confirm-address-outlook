@@ -175,11 +175,11 @@
   <data name="counterLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
   </data>
-  <data name="pnlMailBody.Size" type="System.Drawing.Size, System.Drawing">
-    <value>420, 120</value>
-  </data>
   <data name="columnAttachedFileName.Text" xml:space="preserve">
     <value>添付ファイル名</value>
+  </data>
+  <data name="pnlMailBody.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 120</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Meiryo UI, 9pt</value>
