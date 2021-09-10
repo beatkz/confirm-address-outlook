@@ -117,19 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="columnMyMailAddress.Text" xml:space="preserve">
-    <value>Seus endereços de domínio</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>426, 582</value>
   </data>
-  <data name="columnOtherMailAddress.Text" xml:space="preserve">
-    <value>Outros endereços de domínio</value>
+  <data name="confirm_message.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 21</value>
   </data>
-  <data name="confirm_message.Text" xml:space="preserve">
-    <value>Por favor, confirme os seguintes endereços de email:</value>
+  <data name="footer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 536</value>
   </data>
-  <data name="btn_DoSend.Text" xml:space="preserve">
-    <value>Enviar</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Confirme o endereço de email</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>426, 582</value>
   </data>
 </root>

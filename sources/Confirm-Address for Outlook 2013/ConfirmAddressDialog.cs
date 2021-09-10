@@ -77,10 +77,22 @@ namespace Confirm_Address_for_Outlook_2013
             SettingsfromRegistrySettings();
             AddListViewItem(ref internalList, ref InternalMailAddressList);
             AddListViewItem(ref externalList, ref ExternalMailAddressList);
-            if(attachList.Count >= 1)
+            if(attachList.Count > 0)
             {
                 AddListViewItem(ref attachList, ref AttachmentList);
                 pnlAttach.Visible = true;
+                AttachmentList.AutoResizeColumn(
+                    1, ColumnHeaderAutoResizeStyle.ColumnContent);
+            }
+            if(internalList.Count > 0)
+            {
+                InternalMailAddressList.AutoResizeColumn(
+                    1, ColumnHeaderAutoResizeStyle.ColumnContent);
+            }
+            if(externalList.Count > 0)
+            {
+                ExternalMailAddressList.AutoResizeColumn(
+                    1, ColumnHeaderAutoResizeStyle.ColumnContent);
             }
             mailBodyBox.Text = isMailBodyConfirm ? mailBody : "";
         }
