@@ -27,17 +27,17 @@ namespace Confirm_Address_for_Outlook_2013
             // => リフレクションを利用して .NET ライブラリ中の
             // System.Windows.Forms.UnsafeNativeMethods.IOleObject
             //クラスにある GetClientSite メソッドを呼び出します。
-            Type type = typeof(System.Object);
+            var type = typeof(object);
             string assembly = type.Assembly.CodeBase.Replace("mscorlib.dll", "System.Windows.Forms.dll");
             assembly = assembly.Replace("file:///", "");
 
             string assemblyName = System.Reflection.AssemblyName.GetAssemblyName(assembly).FullName;
-            Type unsafeNativeMethods = Type.GetType(
+            var unsafeNativeMethods = Type.GetType(
                 System.Reflection.Assembly.CreateQualifiedName(
                     assemblyName, "System.Windows.Forms.UnsafeNativeMethods")
                     );
 
-            Type oleObj = unsafeNativeMethods.GetNestedType("IOleObject");
+            var oleObj = unsafeNativeMethods.GetNestedType("IOleObject");
             System.Reflection.MethodInfo methodInfo = oleObj.GetMethod("GetClientSite");
             _propertyPageSite = methodInfo.Invoke(this, null) as Microsoft.Office.Interop.Outlook.PropertyPageSite;
         }

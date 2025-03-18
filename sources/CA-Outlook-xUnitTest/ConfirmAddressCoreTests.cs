@@ -1,6 +1,9 @@
 using Xunit;
 using Confirm_Address_for_Outlook_2013;
 using System.Collections.Generic;
+using System;
+using Moq;
+using Outlook = Microsoft.Office.Interop.Outlook;
 
 namespace CA_Outlook_xUnitTest
 {
@@ -10,7 +13,7 @@ namespace CA_Outlook_xUnitTest
         public void TestJudge_domainListIsNull()
         {
             List<string> addressList = new List<string>
-                { 
+                {
                     "aaa@me.com", 
                     "bbb@me.com" 
                 };
@@ -182,6 +185,23 @@ namespace CA_Outlook_xUnitTest
             string printBody = cac.getMailBody(rawBody, printRows);
 
             Assert.Equal("ÅõÅõäîéÆâÔé–\nÅ~Å~ól\n", printBody);
+        }
+
+        [Fact]
+        public void Test_NonExchangeAddressType()
+        {
+            // Arrange
+            List<string> addressList = new List<string> { };
+            var core = new ConfirmAddressCore();
+            var mockAddressEntry = new Mock<Outlook.AddressEntry>();
+            mockAddressEntry.Setup(a => a.Type).Returns("SMTP");
+            mockAddressEntry.Setup(a => a.Address).Returns("imc@soliton.co.jp");
+
+            // Act
+            core.AddressListfromAddressEntry(ref addressList, mockAddressEntry.Object);
+
+            // Assert
+            Assert.Equal("imc@soliton.co.jp", addressList[0]);
         }
 
     }
