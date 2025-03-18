@@ -1,0 +1,7 @@
+;!@Install@!UTF-8!
+Title="Confirm-Address for Outlook Classicのインストール"
+Directory="C:\\Utils\\C-AOutlook"
+InstallPath="C:\\Utils\\C-AOutlook"
+BeginPrompt="プログラムのインストールを開始します。"
+ExecuteFile="setup.cmd"
+;!@InstallEnd@!

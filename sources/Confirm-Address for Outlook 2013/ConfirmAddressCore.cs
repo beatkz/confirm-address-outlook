@@ -2,6 +2,9 @@
 using Outlook = Microsoft.Office.Interop.Outlook;
 using System.Runtime.InteropServices;
 using System.Linq;
+using System;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace Confirm_Address_for_Outlook_2013
 {
@@ -12,7 +15,7 @@ namespace Confirm_Address_for_Outlook_2013
             string mailbody = "";
             string[] del = { "\n" };
 
-            string[] splitedBody = rawBody.Split(del,System.StringSplitOptions.None);
+            string[] splitedBody = rawBody.Split(del, System.StringSplitOptions.None);
             
             if(splitedBody.Length < printLines)
             {
@@ -52,8 +55,8 @@ namespace Confirm_Address_for_Outlook_2013
             }
         }
 
-        private void AddressListfromAddressEntry(
-            ref List<string> AddressList, 
+        public void AddressListfromAddressEntry(
+            ref List<string> AddressList,
             Outlook.AddressEntry entry)
         {
             string smtpAddress = null;
@@ -61,12 +64,26 @@ namespace Confirm_Address_for_Outlook_2013
                 "現在処理中のメールアドレス：" + entry.Address);
             System.Diagnostics.Debug.WriteLine(
                 "現在処理中のメールアドレスタイプ：" + entry.Type);
+
             if (entry.Type == "EX")
             {
+                // まず配布リストを検索
+                smtpAddress = SMTPAddressfromDistroListX400Address(entry);
+                if (!string.IsNullOrEmpty(smtpAddress))
+                {
+                    System.Diagnostics.Debug.WriteLine(
+                        "配布リストのメールアドレス：" + smtpAddress);
+                    AddressList.Add(smtpAddress);
+                    return;
+                }
+                // 次にユーザーを検索
                 smtpAddress = SMTPAddressfromExchangeX400Address(entry);
-                System.Diagnostics.Debug.WriteLine(
-                    "メールアドレス：" + smtpAddress);
-                AddressList.Add(smtpAddress);
+                if (!string.IsNullOrEmpty(smtpAddress))
+                {
+                    System.Diagnostics.Debug.WriteLine(
+                        "メールボックスのメールアドレス：" + smtpAddress);
+                    AddressList.Add(smtpAddress);
+                }
             }
             else
             {
@@ -74,25 +91,95 @@ namespace Confirm_Address_for_Outlook_2013
             }
         }
 
+        private void LogErrorAsJson(string message, string stackTrace, string x400Address, string methodName)
+        {
+            var errorLog = new
+            {
+                timestamp = DateTime.Now,
+                level = "ERROR",
+                message,
+                stackTrace,
+                x400Address,
+                methodName
+            };
+
+            string jsonLog = JsonConvert.SerializeObject(errorLog, Formatting.Indented);
+            File.AppendAllText("error.json", jsonLog + Environment.NewLine);
+        }
+
+        private string SMTPAddressfromDistroListX400Address(Outlook.AddressEntry entry)
+        {
+            string smtpAddress = null;
+            if (entry != null)
+            {
+                System.Diagnostics.Debug.WriteLine($"[{DateTime.Now}] 変換開始: X400アドレス = {entry.Address}");
+                object dl = null;
+                try
+                {
+                    dl = entry.GetType().InvokeMember(
+                        "GetExchangeDistributionList",
+                        System.Reflection.BindingFlags.InvokeMethod,
+                        null, entry, new object[] { });
+                    if (dl != null)
+                    {
+                        smtpAddress = dl.GetType().InvokeMember(
+                            "PrimarySmtpAddress",
+                            System.Reflection.BindingFlags.GetProperty,
+                            null, dl, new object[] { }).ToString();
+                        System.Diagnostics.Debug.WriteLine($"[{DateTime.Now}] 変換成功: SMTPアドレス = {smtpAddress}");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    LogErrorAsJson(ex.Message, ex.StackTrace, entry.Address, nameof(SMTPAddressfromDistroListX400Address));
+                    smtpAddress = string.Empty;
+                }
+                finally
+                {
+                    if (dl != null)
+                    {
+                        Marshal.ReleaseComObject(dl);
+                    }
+                }
+            }
+            else
+            {
+                smtpAddress = string.Empty;
+            }
+            return smtpAddress;
+        }
+
+
         private string SMTPAddressfromExchangeX400Address(Outlook.AddressEntry entry)
         {
             string smtpAddress = null;
             if (entry != null)
             {
-                object user = entry.GetType().InvokeMember(
-                    "GetExchangeUser", 
-                    System.Reflection.BindingFlags.InvokeMethod, 
-                    null, entry, new object[] { });
-                if (user != null)
+                System.Diagnostics.Debug.WriteLine($"[{DateTime.Now}] 変換開始: X400アドレス = {entry.Address}");
+                object user = null;
+                try
                 {
-                    try
+                    user = entry.GetType().InvokeMember(
+                        "GetExchangeUser",
+                        System.Reflection.BindingFlags.InvokeMethod,
+                        null, entry, new object[] { });
+                    if (user != null)
                     {
                         smtpAddress = user.GetType().InvokeMember(
                             "PrimarySmtpAddress",
                             System.Reflection.BindingFlags.GetProperty,
                             null, user, new object[] { }).ToString();
+                        System.Diagnostics.Debug.WriteLine($"[{DateTime.Now}] 変換成功: SMTPアドレス = {smtpAddress}");
                     }
-                    finally
+                }
+                catch (Exception ex)
+                {
+                    LogErrorAsJson(ex.Message, ex.StackTrace, entry.Address, nameof(SMTPAddressfromExchangeX400Address));
+                    smtpAddress = string.Empty;
+                }
+                finally
+                {
+                    if (user != null)
                     {
                         Marshal.ReleaseComObject(user);
                     }
