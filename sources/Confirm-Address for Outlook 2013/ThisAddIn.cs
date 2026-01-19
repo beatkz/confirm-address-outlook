@@ -73,7 +73,7 @@ namespace Confirm_Address_for_Outlook_2013
                 externalList);
 
             var printLines = ru.LoadRegInt("ConfirmMailBodyLines");
-            mailBody = caC.getMailBody(mail.Body, printLines);
+            mailBody = caC.GetMailBody(mail.Body, printLines);
 
             caC.CollectAttachments(mail.Attachments, ref attachments);
 

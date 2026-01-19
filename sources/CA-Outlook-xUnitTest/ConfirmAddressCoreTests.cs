@@ -124,7 +124,7 @@ namespace CA_Outlook_xUnitTest
             string indomains = "gmail.com,me.com";
 
             ConfirmAddressCore cac = new ConfirmAddressCore();
-            List<string> domainList = cac.getDomainList(indomains);
+            List<string> domainList = cac.GetDomainList(indomains);
 
             Assert.Equal(2, domainList.Count);
         }
@@ -135,7 +135,7 @@ namespace CA_Outlook_xUnitTest
             string indomains = "";
 
             ConfirmAddressCore cac = new ConfirmAddressCore();
-            List<string> domainList = cac.getDomainList(indomains);
+            List<string> domainList = cac.GetDomainList(indomains);
 
             Assert.Empty(domainList);
         }
@@ -146,7 +146,7 @@ namespace CA_Outlook_xUnitTest
             string indomains = null;
 
             ConfirmAddressCore cac = new ConfirmAddressCore();
-            List<string> domainList = cac.getDomainList(indomains);
+            List<string> domainList = cac.GetDomainList(indomains);
 
             Assert.Empty(domainList);
         }
@@ -158,7 +158,7 @@ namespace CA_Outlook_xUnitTest
             long printRows = 3;
 
             ConfirmAddressCore cac = new ConfirmAddressCore();
-            string printBody = cac.getMailBody(rawBody, printRows);
+            string printBody = cac.GetMailBody(rawBody, printRows);
 
             Assert.Equal("››Š”®‰ïĞ\n~~—l\n\n", printBody);
         }
@@ -170,7 +170,7 @@ namespace CA_Outlook_xUnitTest
             long printRows = 5;
 
             ConfirmAddressCore cac = new ConfirmAddressCore();
-            string printBody = cac.getMailBody(rawBody, printRows);
+            string printBody = cac.GetMailBody(rawBody, printRows);
 
             Assert.Equal("››Š”®‰ïĞ\n~~—l\n\n‚¨¢˜b‚É‚È‚Á‚Ä‚¨‚è‚Ü‚·B\nŠ”®‰ïĞ‚Ì¢¢‚Å‚·B\n", printBody);
         }
@@ -182,7 +182,7 @@ namespace CA_Outlook_xUnitTest
             long printRows = 5;
 
             ConfirmAddressCore cac = new ConfirmAddressCore();
-            string printBody = cac.getMailBody(rawBody, printRows);
+            string printBody = cac.GetMailBody(rawBody, printRows);
 
             Assert.Equal("››Š”®‰ïĞ\n~~—l\n", printBody);
         }

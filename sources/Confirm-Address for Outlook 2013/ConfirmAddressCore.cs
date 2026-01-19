@@ -10,7 +10,7 @@ namespace Confirm_Address_for_Outlook_2013
 {
     public class ConfirmAddressCore
     {
-        public string getMailBody(string rawBody, long printLines)
+        public string GetMailBody(string rawBody, long printLines)
         {
             string mailbody = "";
             string[] del = { "\n" };
@@ -30,7 +30,7 @@ namespace Confirm_Address_for_Outlook_2013
             return mailbody;
         }
 
-        public List<string> getDomainList(string domains)
+        public List<string> GetDomainList(string domains)
         {
             if (domains == null || domains.Length == 0)
             {
@@ -76,13 +76,14 @@ namespace Confirm_Address_for_Outlook_2013
                     AddressList.Add(smtpAddress);
                     return;
                 }
-                // 次にユーザーを検索
+                // 次にX400アドレスユーザーを検索
                 smtpAddress = SMTPAddressfromExchangeX400Address(entry);
                 if (!string.IsNullOrEmpty(smtpAddress))
                 {
                     System.Diagnostics.Debug.WriteLine(
                         "メールボックスのメールアドレス：" + smtpAddress);
                     AddressList.Add(smtpAddress);
+                    return;
                 }
             }
             else
@@ -104,7 +105,10 @@ namespace Confirm_Address_for_Outlook_2013
             };
 
             string jsonLog = JsonConvert.SerializeObject(errorLog, Formatting.Indented);
-            File.AppendAllText("error.json", jsonLog + Environment.NewLine);
+            
+            string logFilePath = Environment.SpecialFolder.DesktopDirectory + "\\ConfirmAddressErrorLog.json";
+
+            File.AppendAllText(logFilePath, jsonLog + Environment.NewLine);
         }
 
         private string SMTPAddressfromDistroListX400Address(Outlook.AddressEntry entry)
