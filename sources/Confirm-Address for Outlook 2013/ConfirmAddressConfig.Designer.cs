@@ -106,7 +106,7 @@
             resources.ApplyResources(this.OriginalURLLink, "OriginalURLLink");
             this.OriginalURLLink.Name = "OriginalURLLink";
             this.OriginalURLLink.TabStop = true;
-            this.OriginalURLLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OriginalURLLink_LinkClicked);
+            this.OriginalURLLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.URLLink_LinkClicked);
             // 
             // credit2
             // 
@@ -118,7 +118,7 @@
             resources.ApplyResources(this.PortingURLLink, "PortingURLLink");
             this.PortingURLLink.Name = "PortingURLLink";
             this.PortingURLLink.TabStop = true;
-            this.PortingURLLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OriginalURLLink_LinkClicked);
+            this.PortingURLLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.URLLink_LinkClicked);
             // 
             // AppVersion
             // 

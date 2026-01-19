@@ -337,9 +337,48 @@ namespace Confirm_Address_for_Outlook_2013
             }
         }
 
-        private void OriginalURLLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void URLLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start(OriginalURLLink.Text);
+            if (sender is LinkLabel linkLabel && !string.IsNullOrEmpty(linkLabel.Text))
+            {
+                string url = linkLabel.Text.Trim();  // 余分なスペースを除去
+                if (IsValidUrl(url))  // URLの簡易検証（オプション）
+                {
+                    try
+                    {
+                        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                        {
+                            FileName = url,
+                            UseShellExecute = true
+                        });
+                    }
+                    catch (Exception ex)
+                    {
+                        // エラーハンドリング: ログ出力やMessageBoxで通知
+                        MessageBox.Show($"URLの開封に失敗しました: {ex.Message}\nURL: {url}", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show($"無効なURLです: {url}", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
+        private bool IsValidUrl(string url)
+        {
+            if (string.IsNullOrWhiteSpace(url))
+                return false;
+
+            try
+            {
+                var uri = new Uri(url);
+                return uri.Scheme == Uri.UriSchemeHttp || uri.Scheme == Uri.UriSchemeHttps;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         private void ValueChangedEvent(object sender, EventArgs e)
