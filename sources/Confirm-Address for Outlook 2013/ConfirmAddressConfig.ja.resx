@@ -161,7 +161,10 @@
     <value>308, 398</value>
   </data>
   <data name="AppVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 15</value>
+    <value>124, 15</value>
+  </data>
+  <data name="AppVersion.Text" xml:space="preserve">
+    <value>Version: debug build</value>
   </data>
   <data name="InsiderDomainBatchCheck.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 19</value>
