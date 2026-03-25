@@ -15,7 +15,7 @@ copy require\setup.cmd dest\
 cd dest
 "%ZCMD%" a ..\archive.7z *.* -r -t7z -mmt=on
 cd ..
-copy /b require\7zSD.sfx + require\7zSDconfig.txt + archive.7z  Confirm-AddressOutlookSetupvxyz.exe
+copy /b require\7zS.sfx + require\7zSconfig.txt + archive.7z  Confirm-AddressOutlookSetupvxyz.exe
 
 endlocal
 pause .

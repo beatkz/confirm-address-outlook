@@ -8,11 +8,11 @@
 リンク先は7-Zip公式サイト。リンク先からインストーラーをDLか、下記のコマンドでインストール可能。(要アプリインストーラー)  
 `winget install 7zip.7zip --silent`
 
-- [7zSD.sfx on Github](https://github.com/git-for-windows/build-extra/tree/main/7-Zip)  
+- [7zS.sfx on Github](https://github.com/git-for-windows/build-extra/tree/main/7-Zip)  
 GUI版インストーラー用自己解凍モジュール。
 
 - UTF-8が編集できるテキストエディター  
-7zSDconfig.txtを編集する際に使用する。
+7zSconfig.txtを編集する際に使用する。
 
 ## 作り方
 
@@ -29,7 +29,7 @@ GUI版インストーラー用自己解凍モジュール。
     - destフォルダーに移動してCtrl+Aで選択してから右クリック→7-zip→圧縮する。
     - ファイル名はarchive.7zとしてdistro-workbenchに置く。
 
-3. 7zSDconfig.txtを作成する
+3. 7zSconfig.txtを作成する
 
     簡易インストーラーに対しての設定ファイルをUTF-8形式で作成する。
 
@@ -43,7 +43,7 @@ GUI版インストーラー用自己解凍モジュール。
     ;!@InstallEnd@!
     ```
 
-    書けたら7zSDconfig.txtと名前を付けて保存する。
+    書けたら7zSconfig.txtと名前を付けて保存する。
 
 4. exe化する
 
@@ -60,8 +60,8 @@ GUI版インストーラー用自己解凍モジュール。
             setup.cmd
             setup.exe
         require/
-            7zSD.sfx
-            7zSDconfig.txt
+            7zS.sfx
+            7zSconfig.txt
             confirm-address.cer
             setup.cmd
         archive.7z
@@ -71,4 +71,4 @@ GUI版インストーラー用自己解凍モジュール。
 
     - distro-workbenchフォルダーのアドレス欄にcmdと入力してコマンドプロンプトを起動する
     - 下記コマンドを実行すると3ファイルを連結し、exeファイルが作成される。  
-    `copy /b require\7zSD.sfx + require\7zSDconfig.txt + archive.7z Confirm-AddressOutlookSetupvxyz.exe`
+    `copy /b require\7zS.sfx + require\7zSconfig.txt + archive.7z Confirm-AddressOutlookSetupvxyz.exe`
