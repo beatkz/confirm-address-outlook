@@ -37,7 +37,7 @@
     <PublishUrl>D:\Users\kmomose\Develop\git-managed\confirm-address\forOutlookClassic\distro-workbench\dest\</PublishUrl>
     <InstallUrl />
     <TargetCulture>ja</TargetCulture>
-    <ApplicationVersion>1.5.5.16</ApplicationVersion>
+    <ApplicationVersion>1.6.0.0</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>false</UpdateEnabled>
     <UpdateInterval>0</UpdateInterval>
@@ -220,40 +220,19 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <EmbeddedResource Include="ConfirmAddressConfig.de.resx">
-      <DependentUpon>ConfirmAddressConfig.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ConfirmAddressConfig.ja.resx">
-      <DependentUpon>ConfirmAddressConfig.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConfirmAddressConfig.pt-BR.resx">
       <DependentUpon>ConfirmAddressConfig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConfirmAddressConfig.resx">
       <DependentUpon>ConfirmAddressConfig.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConfirmAddressDialog.de.resx">
-      <DependentUpon>ConfirmAddressDialog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConfirmAddressDialog.ja-JP.resx">
-      <DependentUpon>ConfirmAddressDialog.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ConfirmAddressDialog.ja.resx">
-      <DependentUpon>ConfirmAddressDialog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConfirmAddressDialog.pt-BR.resx">
       <DependentUpon>ConfirmAddressDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConfirmAddressDialog.resx">
       <DependentUpon>ConfirmAddressDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConfirmAddressDomainForm.de.resx">
-      <DependentUpon>ConfirmAddressDomainForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ConfirmAddressDomainForm.ja.resx">
-      <DependentUpon>ConfirmAddressDomainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConfirmAddressDomainForm.pt-BR.resx">
       <DependentUpon>ConfirmAddressDomainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConfirmAddressDomainForm.resx">

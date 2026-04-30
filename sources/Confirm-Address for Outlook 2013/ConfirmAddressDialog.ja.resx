@@ -164,10 +164,19 @@
     <value>39, 20</value>
   </data>
   <data name="CountdownPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 482</value>
+    <value>3, 516</value>
   </data>
   <data name="confirm_message.Text" xml:space="preserve">
     <value>宛先メールアドレスを確認してください：</value>
+  </data>
+  <data name="SenderAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 2</value>
+  </data>
+  <data name="ConfirmSenderAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 19</value>
+  </data>
+  <data name="ConfirmSenderAddress.Text" xml:space="preserve">
+    <value>差出人アドレス：</value>
   </data>
   <data name="columnAttachedFileName.Text" xml:space="preserve">
     <value>添付ファイル名</value>
@@ -182,13 +191,13 @@
     <value>送信</value>
   </data>
   <data name="footer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 522</value>
+    <value>3, 556</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>431, 569</value>
+    <value>426, 600</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>431, 569</value>
+    <value>426, 600</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Meiryo UI, 9pt</value>

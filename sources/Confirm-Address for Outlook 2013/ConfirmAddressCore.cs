@@ -1,28 +1,30 @@
-﻿using System.Collections.Generic;
-using Outlook = Microsoft.Office.Interop.Outlook;
-using System.Runtime.InteropServices;
-using System.Linq;
-using System;
+﻿using Microsoft.Office.Interop.Outlook;
 using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Runtime.InteropServices;
+using Outlook = Microsoft.Office.Interop.Outlook;
 
 namespace Confirm_Address_for_Outlook_2013
 {
     public class ConfirmAddressCore
     {
-        public string GetMailBody(string rawBody, long printLines)
+        public string GetMailBody(
+            string rawBody, long printLines)
         {
             string mailbody = "";
             string[] del = { "\n" };
 
             string[] splitedBody = rawBody.Split(del, System.StringSplitOptions.None);
-            
-            if(splitedBody.Length < printLines)
+
+            if (splitedBody.Length < printLines)
             {
                 printLines = (long)splitedBody.Length;
             }
 
-            for (var i=0; i<printLines; i++)
+            for (var i = 0; i < printLines; i++)
             {
                 mailbody += splitedBody[i] + "\n";
             }
@@ -35,14 +37,16 @@ namespace Confirm_Address_for_Outlook_2013
             if (domains == null || domains.Length == 0)
             {
                 return new List<string> { };
-            } else {
+            }
+            else
+            {
                 return domains.Split(',').ToList();
             }
         }
 
         public void CollectMailAddress(
-            Outlook.Recipients reci, 
-            ref List<string>addressList)
+            Outlook.Recipients reci,
+            ref List<string> addressList)
         {
             addressList.Clear();
             if (reci != null)
@@ -92,7 +96,9 @@ namespace Confirm_Address_for_Outlook_2013
             }
         }
 
-        private void LogErrorAsJson(string message, string stackTrace, string x400Address, string methodName)
+        private void LogErrorAsJson(
+            string message, string stackTrace,
+            string x400Address, string methodName)
         {
             var errorLog = new
             {
@@ -105,13 +111,14 @@ namespace Confirm_Address_for_Outlook_2013
             };
 
             string jsonLog = JsonConvert.SerializeObject(errorLog, Formatting.Indented);
-            
+
             string logFilePath = Environment.SpecialFolder.DesktopDirectory + "\\ConfirmAddressErrorLog.json";
 
             File.AppendAllText(logFilePath, jsonLog + Environment.NewLine);
         }
 
-        private string SMTPAddressfromDistroListX400Address(Outlook.AddressEntry entry)
+        private string SMTPAddressfromDistroListX400Address(
+            Outlook.AddressEntry entry)
         {
             string smtpAddress = null;
             if (entry != null)
@@ -133,7 +140,7 @@ namespace Confirm_Address_for_Outlook_2013
                         System.Diagnostics.Debug.WriteLine($"[{DateTime.Now}] 変換成功: SMTPアドレス = {smtpAddress}");
                     }
                 }
-                catch (Exception ex)
+                catch (System.Exception ex)
                 {
                     LogErrorAsJson(ex.Message, ex.StackTrace, entry.Address, nameof(SMTPAddressfromDistroListX400Address));
                     smtpAddress = string.Empty;
@@ -153,8 +160,8 @@ namespace Confirm_Address_for_Outlook_2013
             return smtpAddress;
         }
 
-
-        private string SMTPAddressfromExchangeX400Address(Outlook.AddressEntry entry)
+        private string SMTPAddressfromExchangeX400Address(
+            Outlook.AddressEntry entry)
         {
             string smtpAddress = null;
             if (entry != null)
@@ -176,7 +183,7 @@ namespace Confirm_Address_for_Outlook_2013
                         System.Diagnostics.Debug.WriteLine($"[{DateTime.Now}] 変換成功: SMTPアドレス = {smtpAddress}");
                     }
                 }
-                catch (Exception ex)
+                catch (System.Exception ex)
                 {
                     LogErrorAsJson(ex.Message, ex.StackTrace, entry.Address, nameof(SMTPAddressfromExchangeX400Address));
                     smtpAddress = string.Empty;
@@ -197,10 +204,9 @@ namespace Confirm_Address_for_Outlook_2013
         }
 
         public void Judge(
-            List<string> addressList,
-            List<string> domainList,
-            List<string> yourDomainAddress,
-            List<string> otherDomainAddress){
+            List<string> addressList, List<string> domainList,
+            List<string> yourDomainAddress, List<string> otherDomainAddress)
+        {
             //ドメインリストが空の場合はすべて外部ドメインとみなす
             if (domainList.Count == 0)
             {
@@ -210,58 +216,156 @@ namespace Confirm_Address_for_Outlook_2013
             }
             //ドメインリストと照合して内部・外部ドメインを振り分ける
             SortAddressBetweenInternalAndExternal(
-                addressList, domainList, 
+                addressList, domainList,
                 yourDomainAddress, otherDomainAddress);
         }
 
         private void AssumeOtherDomainAddress(
-            List<string> addressList,
-            List<string> otherDomainAddress){
-            for (var i = 0; i < addressList.Count; i++){
+            List<string> addressList, List<string> otherDomainAddress)
+        {
+            for (var i = 0; i < addressList.Count; i++)
+            {
                 var address = addressList[i];
                 otherDomainAddress.Add(address);
             }
         }
 
         private void SortAddressBetweenInternalAndExternal(
-            List<string> addressList,
-            List<string> domainList,
-            List<string> yourDomainAddress,
-            List<string> otherDomainAddress){
-            for (var i = 0; i < addressList.Count; i++){
+            List<string> addressList, List<string> domainList,
+            List<string> yourDomainAddress, List<string> otherDomainAddress)
+        {
+            for (var i = 0; i < addressList.Count; i++)
+            {
                 var address = addressList[i];
-                if (address.Length == 0){
+                if (address.Length == 0)
+                {
                     continue;
                 }
                 var domain = address.Substring(address.IndexOf("@")).ToLower();
                 var match = false;
-                for (var j = 0; j < domainList.Count; j++){
+                for (var j = 0; j < domainList.Count; j++)
+                {
                     string insiderDomain = LowerCasedDomainfromDomainList(domainList, j);
-                    if (domain.IndexOf(insiderDomain) != -1){
+                    if (domain.IndexOf(insiderDomain) != -1)
+                    {
                         match = true;
                     }
                 }
-                if (match){
+                if (match)
+                {
                     yourDomainAddress.Add(address);
-                }else{
+                }
+                else
+                {
                     otherDomainAddress.Add(address);
                 }
             }
         }
 
         public void CollectAttachments(
-            Outlook.Attachments att,
-            ref List<string> attList)
+            Outlook.Attachments att, ref List<string> attList)
         {
             foreach (Outlook.Attachment item in att)
             {
                 attList.Add(item.FileName);
             }
         }
+
         private static string LowerCasedDomainfromDomainList(
-            List<string> domainList,
-            int j){
+            List<string> domainList, int j)
+        {
             return domainList[j].ToLower();
+        }
+
+        public string GetSenderSmtpAddress(
+            Outlook.MailItem mailItem)
+        {
+            if (mailItem == null)
+            {
+                return string.Empty;
+            }
+
+            string senderEmail = mailItem.SenderEmailAddress ?? string.Empty;
+            string senderType = mailItem.SenderEmailType ?? string.Empty;
+
+            System.Diagnostics.Debug.WriteLine(
+                $"[送信者取得] SenderEmailAddress: {senderEmail}, SenderEmailType: {senderType}, Sender: {(mailItem.Sender != null ? "存在" : "null")}");
+
+            // SenderEmailType が "EX" の場合、AddressEntry経由で変換を試みる
+            if (senderType == "EX")
+            {
+                string smtpAddress = SenderSmtpAddressfromEXMailItem(mailItem);
+                if (!string.IsNullOrEmpty(smtpAddress))
+                {
+                    return smtpAddress;
+                }
+            }
+
+            // SMTPアドレスの場合、または上記で取得できなかった場合は SenderEmailAddress を返す
+            return !string.IsNullOrEmpty(senderEmail) ? senderEmail : string.Empty;
+        }
+
+        private Outlook.AddressEntry SenderAddressEntryfromMailItem(
+            Outlook.MailItem mailItem)
+        {
+            Outlook.AddressEntry senderEntry = null;
+            string senderEmail = mailItem.SenderEmailAddress ?? string.Empty;
+
+            // 1. 優先：mailItem.Sender から直接 AddressEntry を取得
+            if (mailItem.Sender != null)
+            {
+                senderEntry = mailItem.Sender as Outlook.AddressEntry;
+            }
+
+            // RecipientをResolveしてAddressEntryを取得
+            if (senderEntry == null && !string.IsNullOrEmpty(senderEmail))
+            {
+                try
+                {
+                    Outlook.Recipient recipient = mailItem.Application.Session.CreateRecipient(senderEmail);
+                    if (recipient != null)
+                    {
+                        recipient.Resolve();
+                        if (recipient.Resolved)
+                        {
+                            senderEntry = recipient.AddressEntry;
+                            System.Diagnostics.Debug.WriteLine("代替手段でAddressEntryを取得しました");
+                        }
+                    }
+                }
+                catch (System.Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine($"AddressEntry代替取得で例外: {ex.Message}");
+                }
+            }
+            return senderEntry;
+        }
+
+        private string SenderSmtpAddressfromEXMailItem(Outlook.MailItem mailItem) {
+            Outlook.AddressEntry senderEntry = SenderAddressEntryfromMailItem(mailItem);
+
+            if (senderEntry != null)
+            {
+                System.Diagnostics.Debug.WriteLine($"送信者X400アドレス: {senderEntry.Address}");
+
+                // 配布リストを優先して検索
+                string smtpAddress = SMTPAddressfromDistroListX400Address(senderEntry);
+                if (!string.IsNullOrEmpty(smtpAddress))
+                {
+                    return smtpAddress;
+                }
+
+                // 配布リストで取得できなかった場合はExchangeユーザーとして変換
+                smtpAddress = SMTPAddressfromExchangeX400Address(senderEntry);
+                if (!string.IsNullOrEmpty(smtpAddress))
+                {
+                    return smtpAddress;
+                }
+
+                // 変換できなかった場合は元のアドレスを返す
+                return senderEntry.Address;
+            }
+            return string.Empty;
         }
     }
 }

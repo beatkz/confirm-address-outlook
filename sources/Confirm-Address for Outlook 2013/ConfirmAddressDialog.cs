@@ -29,16 +29,13 @@ namespace Confirm_Address_for_Outlook_2013
             InitializeComponent();
         }
 
-        public DialogResult ShowConfirmAddressDialog(
-            ref List<string> internalList, 
-            ref List<string> externalList,
-            ref List<string> attachList,
-            ref string mailBody)
+        public DialogResult ShowConfirmAddressDialog(ConfirmDialogData data)
         {
-            this.internalList = internalList;
-            this.externalList = externalList;
-            this.attachList = attachList;
-            this.mailBody = mailBody;
+            this.SenderAddress.Text = data.SenderAddress;
+            this.internalList = data.InternalList;
+            this.externalList = data.ExternalList;
+            this.attachList = data.AttachList;
+            this.mailBody = data.MailBody;
 
             var result = ShowDialog();
 
@@ -72,7 +69,9 @@ namespace Confirm_Address_for_Outlook_2013
             pnlMailBody.Visible = isMailBodyConfirm;
         }
 
-        private void ConfirmAddressDialog_Load(object sender, EventArgs e)
+        private void ConfirmAddressDialog_Load(
+            object sender,
+            EventArgs e)
         {
             SettingsfromRegistrySettings();
             AddListViewItem(ref internalList, ref InternalMailAddressList);
@@ -97,7 +96,9 @@ namespace Confirm_Address_for_Outlook_2013
             mailBodyBox.Text = isMailBodyConfirm ? mailBody : "";
         }
 
-        private void ConfirmAddressDialog_FormClosing(object sender, FormClosingEventArgs e)
+        private void ConfirmAddressDialog_FormClosing(
+            object sender, 
+            FormClosingEventArgs e)
         {
             internalList.Clear();
             externalList.Clear();
@@ -106,18 +107,21 @@ namespace Confirm_Address_for_Outlook_2013
             mailBodyBox.Text = "";
         }
 
-        private void MailAddressList_ItemChecked(object sender, ItemCheckedEventArgs e)
+        private void MailAddressList_ItemChecked(
+            object sender, ItemCheckedEventArgs e)
         {
             CheckAllChecked();
         }
 
-        private void ConfirmMailBody_CheckedChanged(object sender, EventArgs e)
+        private void ConfirmAddressDialog_CheckedChanged(
+            object sender, EventArgs e)
         {
             CheckAllChecked();
         }
 
         private void CheckAllChecked()
         {
+            var senderConfirmed = ConfirmSenderAddress.Checked;
             var internalConfirmed = true;
             var externalConfirmed = true;
             var attachFileConfirmed = true;
@@ -164,10 +168,15 @@ namespace Confirm_Address_for_Outlook_2013
                 mailHeadConfirmed = ConfirmMailBody.Checked;
             }
 
-            btn_DoSend.Enabled = internalConfirmed && externalConfirmed && attachFileConfirmed && mailHeadConfirmed;
+            btn_DoSend.Enabled = senderConfirmed 
+                && internalConfirmed 
+                && externalConfirmed 
+                && attachFileConfirmed 
+                && mailHeadConfirmed;
         }
 
-        private void MailAddressList_ColumnClick(object sender, ColumnClickEventArgs e)
+        private void MailAddressList_ColumnClick(
+            object sender, ColumnClickEventArgs e)
         {
             const int ALL_CHECK_MAIL_ADDRESS = 0;
             if (e.Column == ALL_CHECK_MAIL_ADDRESS)
@@ -199,7 +208,8 @@ namespace Confirm_Address_for_Outlook_2013
             }
         }
 
-        private void btn_DoSend_Click(object sender, EventArgs e)
+        private void btn_DoSend_Click(
+            object sender, EventArgs e)
         {
             RegUtil ru = new RegUtil();
             var isCountDownRaw = ru.LoadRegInt("CountDown");
@@ -223,7 +233,8 @@ namespace Confirm_Address_for_Outlook_2013
             }
         }
 
-        private void Countdown(object sender, EventArgs e)
+        private void Countdown(
+            object sender, EventArgs e)
         {
             limit--;
             if (limit < 0)
@@ -236,5 +247,6 @@ namespace Confirm_Address_for_Outlook_2013
                 counterLabel.Text = limit.ToString();
             }
         }
+
     }
 }
